@@ -155,7 +155,9 @@ async def main():
                     await call(s, "cloak_close_page", {"page_id": page})
                 except Exception:
                     pass
-                return
+                # exit 1 so shell chains (del && recreate) stop on abort;
+                # NOTE: the drafts drawer virtualizes ~15 cards - scroll before selecting when the tray is larger
+                raise SystemExit(1)
             await asyncio.sleep(1.2)
             fd = await call(s, "cloak_evaluate", {"page_id": page, "expression": JS_FIND_DELETE})
             print("delete controls:", fd[:400])
