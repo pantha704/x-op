@@ -213,3 +213,73 @@
 - media: none
 - why: v5+genre - practical tip; dev register, light self-roast
 - created: 2026-09-23T10:30:34Z
+
+## [DRAFT-U-20260923-18] utility | pending
+- target: https://addy.io/
+- text: "signed up with an alias, spam showed up, alias off. addy. my real inbox never saw it"
+- media: none
+- why: alias can be killed when spam starts; lived sequence, not a product blurb
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-19] utility | pending
+- target: https://explainshell.com/
+- text: "copied a one liner off a thread and had no idea what it did. explainshell named every flag"
+- media: none
+- why: paste a command, each flag mapped to its help text
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-20] utility | pending
+- target: https://backloggd.com/
+- text: "steam remembers what i bought. backloggd is where i write down what i actually finished"
+- media: none
+- why: purchase history vs a personal play log
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-21] utility | pending
+- target: https://openwebui.com/
+- text: "i talk to local models in open webui now. same models, i just stopped copy pasting into a terminal"
+- media: none
+- why: self hosted chat for local models; builder register
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-22] utility | pending
+- target: https://devdocs.io/
+- text: "devdocs or a new tab for every docs site, what would you pick"
+- media: none
+- why: question-shaped pick; combined offline docs vs a tab per site
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-23] utility | pending
+- target: https://free-for.dev/
+- text: "someone asks for a free tier that is not a trap and i send free for dev. the list is the answer"
+- media: none
+- why: the list people forward when a free tier already exists
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-24] utility | pending
+- target: https://github.com/aniskip/aniskip-extension
+- text: "rewatching means the op is homework. aniskip does that part and i stay for the episode"
+- media: none
+- why: crowdsourced opening and ending skip; fandom register
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-25] utility | pending
+- target: https://jsoncrack.com/
+- text: "i paste ugly api responses into jsoncrack now. the graph does what scrolling never did"
+- media: none
+- why: json tree graph; page says data stays on the device
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-26] utility | pending
+- target: https://www.steamgriddb.com/
+- text: "heroic and itch games looked unofficial until steamgriddb. the shelf finally matches"
+- media: none
+- why: custom library art for non steam launchers; gaming register
+- created: 2026-09-23T10:40:00Z
+
+## [DRAFT-U-20260923-27] utility | pending
+- target: https://www.livechart.me/
+- text: "what airs tonight is a livechart question now. i stopped trusting the group chat for times"
+- media: none
+- why: airing chart with slots; fandom register
+- created: 2026-09-23T10:40:00Z
