@@ -6,6 +6,12 @@
 - `DRAFT-QUEUE.md` — posts awaiting review. Lanes: `quote | utility | funny | nostalgia | trend`. Status flow: `pending -> approved -> fired` (or `rejected`).
 - `TREND-QUEUE.md` — the trend scout's daily research doc (20-30 current items in our genres; owner picks which to turn into drafts).
 
+## X native drafts (owner directive 2026-09-23)
+Every draft is ALSO saved as a native X draft so the owner reviews it in his app (Drafts -> Unsent posts).
+- Non-quote drafts (utility, funny, trend): `cd /home/ubuntu/x-op && ./venv/bin/python post_draft.py "<text>"`
+- **QUOTE drafts: `./venv/bin/python post_quote_draft.py "<target_url>" "<line>"`** — opens via the Quote menu so the quoted post card is attached (plain text is wrong for quotes; card verified before save).
+- Inspect the drawer: `./venv/bin/python ops/x_drafts_inspect.py` · delete old drafts by text: `./venv/bin/python ops/x_drafts_cleanup.py`.
+
 ## Item format (append; never rewrite others' items)
 ```
 ## [DRAFT-<id>] <lane> | pending
