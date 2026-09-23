@@ -36,6 +36,14 @@ One account, one serialized human-like action stream. Three parts:
 
 No engagement bait, no attention-chasing, NSFW skipped outright, no engagement pods.
 
+## Progress snapshot (2026-09-23)
+
+![X analytics — the account's first days](docs/analytics-5d.png)
+
+The account's first days live, straight from the X analytics dashboard (7-day view): impressions,
+follows, and posting activity. Program baseline at capture: **456 / 500K** verified Home Timeline
+impressions, **109 / 500** verified followers.
+
 ## Layout
 
 ```
