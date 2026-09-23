@@ -60,6 +60,14 @@ TYPE_JS = r"""JSON.stringify((() => {
   return {ok:true, len: (ed.innerText || '').length};
 })())"""
 
+APPEND_JS = r"""JSON.stringify((() => {
+  const ed = document.querySelector('[data-testid="tweetTextarea_0"]');
+  if (!ed) return {ok:false, why:'no editor'};
+  ed.focus();
+  document.execCommand('insertText', false, %s);
+  return {ok:true, len: (ed.innerText || '').length};
+})()"""
+
 CARD_JS = r"""JSON.stringify((() => {
   const d = document.querySelector('[role="dialog"]') || document;
   const byAvatar = !!d.querySelector('[data-testid="UserAvatar-Container-__HANDLE__"]');
@@ -86,6 +94,9 @@ CONFIRM_JS = r"""JSON.stringify((() => {
 async def main():
     target, text = sys.argv[1], sys.argv[2]
     handle = target.split("/")[3] if "/status/" in target else ""
+    # HARD RULE (owner 2026-09-23): quote drafts carry the target tweet URL as the last line.
+    if not text.rstrip().endswith(target):
+        text = text.rstrip() + "\n" + target
 
     async with streamable_http_client(URL) as ctx:
         r, w = ctx[0], ctx[1]
@@ -101,11 +112,13 @@ async def main():
             mq = await ev(s, pid, MENU_JS)
             print("quote-menu:", mq)
             await asyncio.sleep(2.4)
-            tp = await ev(s, pid, TYPE_JS % json.dumps(text))
-            print("type:", tp)
-            if isinstance(tp, dict) and tp.get("len") and tp["len"] != len(text):
-                await asyncio.sleep(0.8)
-                print("retype:", await ev(s, pid, TYPE_JS % json.dumps(text)))
+            # MULTILINE-SAFE (2026-09-23): comment first, settle, then "\n" + target url line.
+            comment, url_line = text.rsplit("\n", 1)
+            tp = await ev(s, pid, TYPE_JS % json.dumps(comment))
+            print("type1:", tp)
+            await asyncio.sleep(2.0)
+            tp2 = await ev(s, pid, APPEND_JS % json.dumps("\n" + url_line))
+            print("type2:", tp2)
             await asyncio.sleep(1.2)
             card = await ev(s, pid, CARD_JS.replace("__HANDLE__", handle))
             print("card:", card)

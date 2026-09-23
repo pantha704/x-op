@@ -10,35 +10,35 @@
 
 ## [DRAFT-Q-20260923-01] quote | pending
 - target: https://x.com/JJK_Times/status/2102652380588445787
-- text: "hublot bought the whole city and i still couldn't tell you what the watch looks like"
+- text: "hublot bought the whole city and i still couldn't tell you what the watch looks like\nhttps://x.com/JJK_Times/status/2102652380588445787"
 - media: none
 - why: v5 - deadpan confidence instead of the clever-symmetry joke; Hublot/JK takeover
 - created: 2026-09-23T08:29:00Z
 
 ## [DRAFT-Q-20260923-05] quote | pending
 - target: https://x.com/HK47_Actual/status/2102570424114790687
-- text: "beating a boss used to mean something. now the reward is an ad. i miss when games were on our side"
+- text: "beating a boss used to mean something. now the reward is an ad. i miss when games were on our side\nhttps://x.com/HK47_Actual/status/2102570424114790687"
 - media: none
 - why: v5 - wistful loss; microsoft ads-in-games patent
 - created: 2026-09-23T06:52:00Z
 
 ## [DRAFT-Q-20260923-06] quote | pending
 - target: https://x.com/saltydkdan/status/2102593496020373698
-- text: "the chiikawa dub casting call is open and i have never wanted a job i'm unqualified for this badly"
+- text: "the chiikawa dub casting call is open and i have never wanted a job i'm unqualified for this badly\nhttps://x.com/saltydkdan/status/2102593496020373698"
 - media: none
 - why: v5 - longing, self-aware love; caps-lock fandom moment
 - created: 2026-09-23T06:52:00Z
 
 ## [DRAFT-Q-20260923-07] quote | pending
 - target: https://x.com/div1newolf/status/2102518779314057609
-- text: "if the one piece psyop is real i want in. that's the only conspiracy i'd join"
+- text: "if the one piece psyop is real i want in. that's the only conspiracy i'd join\nhttps://x.com/div1newolf/status/2102518779314057609"
 - media: none
 - why: v5 - affection; 13.7k-like one piece post
 - created: 2026-09-23T08:05:00Z
 
 ## [DRAFT-Q-20260923-08] quote | pending
 - target: https://x.com/FabrizioRomano/status/2102652936866140482
-- text: "three leagues and five ballons before winning anything. i want to be this delusional about my own life"
+- text: "three leagues and five ballons before winning anything. i want to be this delusional about my own life\nhttps://x.com/FabrizioRomano/status/2102652936866140482"
 - media: none
 - why: v5 - warm envy; Yamal ambition quote
 - created: 2026-09-23T08:05:00Z

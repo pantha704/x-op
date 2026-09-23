@@ -26,7 +26,19 @@ TYPE_JS = r"""JSON.stringify((() => {
   ed.focus();
   document.execCommand('insertText', false, __TEXT__);
   return {ok:true, len: ed.innerText.length};
-})())"""
+})()"""
+
+CLEAR_JS = r"""JSON.stringify((() => {
+  const ed = document.querySelector('[data-testid="tweetTextarea_0"]');
+  if (!ed) return {ok:false, why:'no editor'};
+  if ((ed.innerText || '').trim().length > 0) {
+    ed.focus();
+    document.execCommand('selectAll', false, null);
+    document.execCommand('delete', false, null);
+    return {ok:true, cleared:true};
+  }
+  return {ok:true, cleared:false};
+})()"""
 
 SAVE_JS = r"""JSON.stringify((() => {
   const close = document.querySelector('[data-testid="app-bar-close"]');
@@ -74,9 +86,22 @@ async def main():
             r1 = await call(s, "cloak_evaluate", {"page_id": page, "expression": OPEN_JS})
             print("open:", r1[:120])
             await asyncio.sleep(1.6)
-            r2 = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps(text))})
-            print("type:", r2[:160])
-            await asyncio.sleep(1.2)
+            print("clear:", (await call(s, "cloak_evaluate", {"page_id": page, "expression": CLEAR_JS}))[:120])
+            await asyncio.sleep(0.6)
+            # MULTILINE-SAFE INSERT (2026-09-23): a single insertText with "\n" gets mangled by
+            # X's linkify/autosave (first line eaten). Two-step insert is stable:
+            # insert line 1, settle, then insert "\n" + rest.
+            if "\n" in text:
+                first, rest = text.split("\n", 1)
+                r2 = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps(first))})
+                print("type1:", r2[:160])
+                await asyncio.sleep(2.0)
+                r2b = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps("\n" + rest))})
+                print("type2:", r2b[:160])
+            else:
+                r2 = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps(text))})
+                print("type:", r2[:160])
+            await asyncio.sleep(1.6)
             if media:
                 # Media attach via JS DataTransfer injection. X's composer no longer exposes
                 # [data-testid="attachments"], and this MCP has no file-upload tool, so we
