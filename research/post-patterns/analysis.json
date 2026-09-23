@@ -1,0 +1,658 @@
+{
+ "accounts": {
+  "AIR_News01": {
+   "posts": 26,
+   "baseline_median_likes": 2300,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 14000,
+     "lift": 6.09,
+     "text": "\"Burn the Witch\" anime visual and stills. (Studio Colorido)",
+     "imgs": 2
+    },
+    {
+     "likes": 6400,
+     "lift": 2.78,
+     "text": "\"Demon Slayer Movie - Infinity Train\" new anime PV; opens October 16 (ufotable)",
+     "imgs": 1
+    },
+    {
+     "likes": 5400,
+     "lift": 2.35,
+     "text": "\u201cHigurashi no Naku Koro ni\u201d (When They Cry) new TV anime PV; airs July 2020 (Passione)",
+     "imgs": 1
+    },
+    {
+     "likes": 4400,
+     "lift": 1.91,
+     "text": "\"Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan\" S3 anime will premiere in July 2020  https:// tbs.co.jp/anime/oregairu /",
+     "imgs": 1
+    },
+    {
+     "likes": 3800,
+     "lift": 1.65,
+     "text": "\"Fire Force\" S2 anime character designs; airs Summer 2020  https:// shonenmagazine.com/info/entry/202 00416enen \u2026",
+     "imgs": 1
+    }
+   ]
+  },
+  "Genki_JPN": {
+   "posts": 18,
+   "baseline_median_likes": 595,
+   "baseline_reliable": true,
+   "handle_match_pct": 94,
+   "top": [
+    {
+     "likes": 3131,
+     "lift": 5.26,
+     "text": "Stellar Blade x Bayonetta new outfit cosplay by  @seika_ruru  at TGS!",
+     "imgs": 1
+    },
+    {
+     "likes": 2590,
+     "lift": 4.35,
+     "text": "New Stellar Blade x Bayonetta \u201cBlack Tresses\u201d outfit designed by Kim Hyung Tae!   via  @gamespark",
+     "imgs": 2
+    },
+    {
+     "likes": 2536,
+     "lift": 4.26,
+     "text": "Naoki Hamaguchi says FF7 Revelation will have an option at a certain point in the game to automatically raise your characters leve",
+     "imgs": 1
+    },
+    {
+     "likes": 1622,
+     "lift": 2.73,
+     "text": "Final Fantasy VII Revelation will have a 4K, 60 fps Versatility mode on PS5 Pro!  \u201cPrioritize maintaining a 60-fps framerate while",
+     "imgs": 2
+    },
+    {
+     "likes": 1230,
+     "lift": 2.07,
+     "text": "Marvel's Wolverine Famitsu review score - 9/9/9/8 [35/40]",
+     "imgs": 1
+    }
+   ]
+  },
+  "HazzadorGamin": {
+   "posts": 15,
+   "baseline_median_likes": 384,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 3648,
+     "lift": 9.49,
+     "text": "Hideo Kojima told IGN it\u2019s up to XBOX if Physint will be Exclusive to Xbox.   https:// bit.ly/4r7JEXe",
+     "imgs": 2
+    },
+    {
+     "likes": 2138,
+     "lift": 5.56,
+     "text": "PlayStation reportedly planning on selling games in parts for $50 each, raising overall prices to $80-100  Sony is planning to rel",
+     "imgs": 1
+    },
+    {
+     "likes": 1164,
+     "lift": 3.03,
+     "text": "Wtf, its 60fps on Series S ",
+     "imgs": 1
+    },
+    {
+     "likes": 1159,
+     "lift": 3.01,
+     "text": "Hideo Kojima confirms they have not decided whether PHYSINT will use Decima Engine.  \"So I want to use all this new technology. An",
+     "imgs": 1
+    },
+    {
+     "likes": 1014,
+     "lift": 2.64,
+     "text": "Bloomberg has confirmed why PlayStation ditched Kojima's 'PHYSINT'   \u2022 Budget concerns \u2022 Missed deadlines \u2022 Wanting Permanent excl",
+     "imgs": 1
+    }
+   ]
+  },
+  "MangaMoguraRE": {
+   "posts": 21,
+   "baseline_median_likes": 5600,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 65000,
+     "lift": 11.61,
+     "text": "\"Here U Are\" Yaoi Webtoon ANIME ADAPTATION ANNOUNCED",
+     "imgs": 1
+    },
+    {
+     "likes": 40000,
+     "lift": 7.14,
+     "text": "\"In the Clear Moonlit Dusk\" TV ANIME TRAILER REVEAL!  Air Date: Jan 2026 Animation Studio: East Fish Studio  Shoujo Romance about ",
+     "imgs": 1
+    },
+    {
+     "likes": 36000,
+     "lift": 6.43,
+     "text": "\"Chiikawa The Movie: The Secret of the Mermaid Island\" Anime Film Trailer Reveal  Release Date: July 24, 2026  Studio: Cygames Pic",
+     "imgs": 1
+    },
+    {
+     "likes": 28000,
+     "lift": 5.0,
+     "text": "Furry Shoujo Romance Anime \"With You, Our Love Will Make It Through\" NEW TRAILER!  Air Date: Oct 2025 Animation Studio: Millepense",
+     "imgs": 1
+    },
+    {
+     "likes": 25000,
+     "lift": 4.46,
+     "text": "\"Smoking Behind the Supermarket With You\" ANIME TRAILER  Date: July 2026 Studio: Asahi Production  An office worker longing for th",
+     "imgs": 1
+    }
+   ]
+  },
+  "Okami13_": {
+   "posts": 20,
+   "baseline_median_likes": 9750,
+   "baseline_reliable": false,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 43000,
+     "lift": 4.41,
+     "text": "This modder managed to add Malenia from Elden Ring to Sekiro and she actually fits perfectly.",
+     "imgs": 1
+    },
+    {
+     "likes": 25000,
+     "lift": 2.56,
+     "text": "Naval combat looks INSANE in Like a Dragon: Pirate Yakuza in Hawaii.  \u2022 Fully customize your ship \u2022 Equip different weapon types l",
+     "imgs": 1
+    },
+    {
+     "likes": 21000,
+     "lift": 2.15,
+     "text": "Avatar: Frontiers of Pandora has more than quadrupled its peak player count on Steam more than two years after release.  Looks lik",
+     "imgs": 1
+    },
+    {
+     "likes": 20000,
+     "lift": 2.05,
+     "text": "In Hogwarts Legacy, you can hop on your broom at any time to fly to another destination.  Brooms can also be customized and upgrad",
+     "imgs": 1
+    },
+    {
+     "likes": 14000,
+     "lift": 1.44,
+     "text": "Avatar: Frontiers of Pandora impressions after 15 hours:  \u2022 One of the best looking games I've ever seen \u2022 Rock solid performance ",
+     "imgs": 1
+    }
+   ]
+  },
+  "TheTuringPost": {
+   "posts": 11,
+   "baseline_median_likes": 1207,
+   "baseline_reliable": true,
+   "handle_match_pct": 82,
+   "top": [
+    {
+     "likes": 0,
+     "lift": 0.0,
+     "text": "tony stark died for this meta",
+     "imgs": 0
+    },
+    {
+     "likes": 0,
+     "lift": 0.0,
+     "text": "700k concurrent for car soccer and it still feels like our little secret",
+     "imgs": 0
+    }
+   ]
+  },
+  "WSJ_manga": {
+   "posts": 18,
+   "baseline_median_likes": 1750,
+   "baseline_reliable": false,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 18000,
+     "lift": 10.29,
+     "text": "HUNTERxHUNTER PV.  Series resumes serialization next week in Weekly Shonen Jump Issue #31.",
+     "imgs": 1
+    },
+    {
+     "likes": 17000,
+     "lift": 9.71,
+     "text": "Kohei Horikoshi, author of My Hero Academia, will be publishing a new boy-meets-girl horror one-shot titled 'Warawanaideyo Shijima",
+     "imgs": 1
+    },
+    {
+     "likes": 9000,
+     "lift": 5.14,
+     "text": "Katekyo Hitman REBORN! '10th Vongola Family' PV.",
+     "imgs": 1
+    },
+    {
+     "likes": 8300,
+     "lift": 4.74,
+     "text": "Dr. STONE x Snickers Commercial",
+     "imgs": 1
+    },
+    {
+     "likes": 5900,
+     "lift": 3.37,
+     "text": "SPYxFAMILY 'CODE: White' Anime Movie New PV.  The original anime movie will premiere on December 22nd, 2023.",
+     "imgs": 1
+    }
+   ]
+  },
+  "Wario64": {
+   "posts": 22,
+   "baseline_median_likes": 1044,
+   "baseline_reliable": false,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 15000,
+     "lift": 14.37,
+     "text": "same",
+     "imgs": 1
+    },
+    {
+     "likes": 14000,
+     "lift": 13.41,
+     "text": "State of Japan has ended. I stopped watching because both presentations were too long together",
+     "imgs": 2
+    },
+    {
+     "likes": 10000,
+     "lift": 9.58,
+     "text": "If banana is sold out, try a different and cheap grocery item  https:// buff.ly/UAq8qps #ad",
+     "imgs": 3
+    },
+    {
+     "likes": 7600,
+     "lift": 7.28,
+     "text": "Bungie: \"we are not done with Destiny\" - beginning the work of bringing vaulted Destiny 2 campaigns and content back to the game  ",
+     "imgs": 3
+    },
+    {
+     "likes": 4300,
+     "lift": 4.12,
+     "text": "Rayman Legends Retold delayed to Dec 3rd (originally releasing Oct 1)  \"While the game has officially gone gold, we have decided t",
+     "imgs": 1
+    }
+   ]
+  },
+  "animecorner_ac": {
+   "posts": 38,
+   "baseline_median_likes": 2,
+   "baseline_reliable": true,
+   "handle_match_pct": 26,
+   "top": [
+    {
+     "likes": 8257,
+     "lift": 4128.5,
+     "text": "...   Anime: Mushoku Tensei Season 3",
+     "imgs": 4
+    },
+    {
+     "likes": 7190,
+     "lift": 3595.0,
+     "text": "\"Mushoku Tensei\" Season 3 Episode 13 ",
+     "imgs": 5
+    },
+    {
+     "likes": 5972,
+     "lift": 2986.0,
+     "text": "OFFICIAL: \"The Failure at God School\" manga is getting a TV anime adaptation!  Story written by Natsu Hyuga, the author of \"The Ap",
+     "imgs": 2
+    },
+    {
+     "likes": 4636,
+     "lift": 2318.0,
+     "text": "\"My Hero Academia\" has announced MHA ULTRA EXPO, a two-day event set for April 17 and 18, 2027 in Japan.   Described as the \"large",
+     "imgs": 3
+    },
+    {
+     "likes": 2779,
+     "lift": 1389.5,
+     "text": "\"Mushoku Tensei\" author: \u201cI\u2019m going to buy some strong alcohol to get through today\u2019s episode of Mushoku Tensei. I\u2019ll drink it whe",
+     "imgs": 1
+    }
+   ]
+  },
+  "dril": {
+   "posts": 51,
+   "baseline_median_likes": 31000,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 127000,
+     "lift": 4.1,
+     "text": "ok so the evil hospital we destroyed turned out to be a normal hospital? Uh oh!! hope we dont make the same mistake 100 more times",
+     "imgs": 0
+    },
+    {
+     "likes": 122000,
+     "lift": 3.94,
+     "text": "no",
+     "imgs": 0
+    },
+    {
+     "likes": 120000,
+     "lift": 3.87,
+     "text": "age 0 (baby): I want my Dada . age 25 (Millennial): I want my Data Do you see how fucked this is?",
+     "imgs": 0
+    },
+    {
+     "likes": 117000,
+     "lift": 3.77,
+     "text": "Food $200 Data $150 Rent $800 Candles $3,600 Utility $150 someone who is good at the economy please help me budget this. my family",
+     "imgs": 0
+    },
+    {
+     "likes": 95000,
+     "lift": 3.06,
+     "text": "the middle east is complicated because its bad to support smothering orphans in hell fire but I also really want to graduate Harva",
+     "imgs": 0
+    }
+   ]
+  },
+  "historyinmemes": {
+   "posts": 24,
+   "baseline_median_likes": 132100,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 410000,
+     "lift": 3.1,
+     "text": "Actor Jane Russel getting accidentally knocked into pool by man diving over her, but she continued the scene anyway (1953)",
+     "imgs": 1
+    },
+    {
+     "likes": 369000,
+     "lift": 2.79,
+     "text": "I grew up watching cartoons like this, so don't ask me to be normal",
+     "imgs": 1
+    },
+    {
+     "likes": 340000,
+     "lift": 2.57,
+     "text": "Can\u2019t stop watching this",
+     "imgs": 1
+    },
+    {
+     "likes": 338000,
+     "lift": 2.56,
+     "text": "The dog was so confused by the end of it",
+     "imgs": 1
+    },
+    {
+     "likes": 250000,
+     "lift": 1.89,
+     "text": "Who approved Brazil's soccer team entrance in 1991?",
+     "imgs": 1
+    }
+   ]
+  },
+  "minchoi": {
+   "posts": 21,
+   "baseline_median_likes": 3200,
+   "baseline_reliable": false,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 49000,
+     "lift": 15.31,
+     "text": "Kling AI is wild.  Memes and arts are coming to life.  8 wild examples:  1. Distracted boyfriend - Stop him?",
+     "imgs": 1
+    },
+    {
+     "likes": 25000,
+     "lift": 7.81,
+     "text": "We are cooked   Nothing is real anymore",
+     "imgs": 2
+    },
+    {
+     "likes": 18000,
+     "lift": 5.62,
+     "text": "Holy smokes... how is this AI?  Seedance 2.0 is wild",
+     "imgs": 2
+    },
+    {
+     "likes": 15000,
+     "lift": 4.69,
+     "text": "If you think AI video can't be funny then explain this. ",
+     "imgs": 1
+    },
+    {
+     "likes": 12000,
+     "lift": 3.75,
+     "text": "Holy smokes... how is this AI?",
+     "imgs": 1
+    }
+   ]
+  },
+  "nihilist_arbys": {
+   "posts": 53,
+   "baseline_median_likes": 5100,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 24000,
+     "lift": 4.71,
+     "text": "You\u2019re older than you\u2019ve ever been, younger than you\u2019ll ever be again, and you\u2019re also a pointless biological accident in an entro",
+     "imgs": 0
+    },
+    {
+     "likes": 17000,
+     "lift": 3.33,
+     "text": "Wow. And we thought your food was an uninspired pathetic imitation. Get fucked, Denny\u2019s. No one goes to you for the pancakes, they",
+     "imgs": 0
+    },
+    {
+     "likes": 15000,
+     "lift": 2.94,
+     "text": "Here at Arby\u2019s we\u2019d like to wish you all a happy Easter, the day the son of god rose again, in fulfillment of the scriptures.  Apr",
+     "imgs": 0
+    },
+    {
+     "likes": 13000,
+     "lift": 2.55,
+     "text": "There are no Arby\u2019s locations in heaven, because there is no such thing as heaven. There are neumerous Arby\u2019s locations in hell, b",
+     "imgs": 0
+    },
+    {
+     "likes": 13000,
+     "lift": 2.55,
+     "text": "Yes. You\u2019re a disappointment to your parents, but look at the bright side, you\u2019re not the one who gave birth to an unloveable fuck",
+     "imgs": 0
+    }
+   ]
+  },
+  "your_handle": {
+   "posts": 33,
+   "baseline_median_likes": 1,
+   "baseline_reliable": true,
+   "handle_match_pct": 55,
+   "top": [
+    {
+     "likes": 5500,
+     "lift": 3666.67,
+     "text": "The Pistons have offered Jalen Duren a 5-year, $200M deal, which he has not accepted. (ESPN)",
+     "imgs": 0
+    },
+    {
+     "likes": 2000,
+     "lift": 1333.33,
+     "text": "Yeah he has lost his mind, just trade him",
+     "imgs": 0
+    },
+    {
+     "likes": 1500,
+     "lift": 1000.0,
+     "text": "Shams: Pistons are currently offering Jalen Duren $200M over 5 years.",
+     "imgs": 0
+    },
+    {
+     "likes": 1400,
+     "lift": 933.33,
+     "text": "Jalen Hurts after his game winner ",
+     "imgs": 1
+    },
+    {
+     "likes": 831,
+     "lift": 554.0,
+     "text": "30 DAYS UNTIL LAKERS REGULAR SEASON ",
+     "imgs": 1
+    }
+   ]
+  },
+  "rowancheung": {
+   "posts": 26,
+   "baseline_median_likes": 12000,
+   "baseline_reliable": true,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 37000,
+     "lift": 3.08,
+     "text": "Apple just announced a ton of incredible AI developments at WWDC.  The 11 most impressive reveals:  1. Using the iPad calculator a",
+     "imgs": 1
+    },
+    {
+     "likes": 24000,
+     "lift": 2.0,
+     "text": "AI continues to make unbelievable advances in healthcare.                Researchers have just created a brain implant that decode",
+     "imgs": 1
+    },
+    {
+     "likes": 22000,
+     "lift": 1.83,
+     "text": "AI-generated QR codes using ControlNet are insane.  This is going to be increasingly common in ads in the near future.  These exam",
+     "imgs": 1
+    },
+    {
+     "likes": 18000,
+     "lift": 1.5,
+     "text": "It's been 5 days of CES 2024, and the announcements have been wild.  Here are 10 reveals you don't want to miss from CES 2024 (day",
+     "imgs": 1
+    },
+    {
+     "likes": 14000,
+     "lift": 1.17,
+     "text": "AI video generation is getting shockingly good.   In a couple of years, anyone will be able to create a movie from a smartphone- w",
+     "imgs": 0
+    }
+   ]
+  },
+  "sugoiLITE": {
+   "posts": 13,
+   "baseline_median_likes": 8500,
+   "baseline_reliable": false,
+   "handle_match_pct": 100,
+   "top": [
+    {
+     "likes": 37000,
+     "lift": 4.35,
+     "text": "Neoshoco's Occult Comedy Manga \"PHANTOM BUSTERS\" will be receiving TV ANIME ADAPTATION!   04 high school boys of different persona",
+     "imgs": 2
+    },
+    {
+     "likes": 20000,
+     "lift": 2.35,
+     "text": "\"86 EIGHTY-SIX\" Anime Sequel production decision.",
+     "imgs": 2
+    },
+    {
+     "likes": 12000,
+     "lift": 1.41,
+     "text": "\"The Melancholy of Haruhi Suzumiya\" Series will be receiving a BRAND-NEW ANIME PROJECT.",
+     "imgs": 2
+    },
+    {
+     "likes": 10000,
+     "lift": 1.18,
+     "text": "Yuri Ecchi Short TV Anime \"Does It Count If You Lose Your Virginity to an Android?\" (Android wa Keiken Ninzuu ni Hairimasu ka??) i",
+     "imgs": 1
+    },
+    {
+     "likes": 10000,
+     "lift": 1.18,
+     "text": "SEASON 2 for Josei TV Anime \"Though I Am an Inept Villainess\" (Futsutsuka na Akujo dewa Gozaimasu ga) is currently \u2018in development",
+     "imgs": 4
+    }
+   ]
+  }
+ },
+ "feature_lift": {
+  "short_text": {
+   "n": 71,
+   "median_lift_with": 2.0,
+   "median_lift_without": 1.0,
+   "delta": 1.0
+  },
+  "has_media": {
+   "n": 184,
+   "median_lift_with": 1.31,
+   "median_lift_without": 1.02,
+   "delta": 0.28
+  },
+  "has_number": {
+   "n": 136,
+   "median_lift_with": 1.19,
+   "median_lift_without": 1.04,
+   "delta": 0.14
+  },
+  "first_person_reaction": {
+   "n": 13,
+   "median_lift_with": 1.02,
+   "median_lift_without": 1.14,
+   "delta": -0.12
+  },
+  "news_shape": {
+   "n": 42,
+   "median_lift_with": 1.0,
+   "median_lift_without": 1.13,
+   "delta": -0.13
+  },
+  "question": {
+   "n": 33,
+   "median_lift_with": 0.97,
+   "median_lift_without": 1.18,
+   "delta": -0.21
+  },
+  "has_link": {
+   "n": 24,
+   "median_lift_with": 0.94,
+   "median_lift_without": 1.17,
+   "delta": -0.23
+  },
+  "opinion_shape": {
+   "n": 34,
+   "median_lift_with": 0.8,
+   "median_lift_without": 1.17,
+   "delta": -0.37
+  },
+  "long_text": {
+   "n": 150,
+   "median_lift_with": 0.99,
+   "median_lift_without": 1.41,
+   "delta": -0.41
+  },
+  "lowercase_start": {
+   "n": 52,
+   "median_lift_with": 0.69,
+   "median_lift_without": 1.18,
+   "delta": -0.49
+  }
+ },
+ "total_posts": 410,
+ "reliable_posts": 316
+}

@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+logs/
+targets/
+media/
+.gitnexus/
+node_modules/
+*.log

@@ -1,0 +1,84 @@
+{
+ "handle": "TheTuringPost",
+ "genre": "tech",
+ "profile": {
+  "followers": "87.8K Followers",
+  "bio": "On X we surface the AI research that matters and explain the ideas behind it. In the newsletter, we connect the dots between AI\u2019s past, present, and future ",
+  "items": "Join over 115,000 readersturingpost.com | Joined June 2020",
+  "name": "Turing Post @TheTuringPost"
+ },
+ "top": [
+  {
+   "url": "https://x.com/TheTuringPost/status/1545788341550997504",
+   "handle": "@TheTuringPost",
+   "likes": 3064,
+   "rts": 977,
+   "replies": 33,
+   "media": 1,
+   "text": "CS109A Data Science course materials  @Harvard  are free and open for everyone!  1. Lecture notes 2. R code, Python notebooks 3. Lab material 4. Advanced sections  Learn here:  https:// harvard-iacs.g",
+   "age": "2022-07-09T15:13:54.000Z"
+  },
+  {
+   "url": "https://x.com/TheTuringPost/status/1525558565859217410",
+   "handle": "@TheTuringPost",
+   "likes": 2307,
+   "rts": 646,
+   "replies": 27,
+   "media": 1,
+   "text": "A free book for you!  Fundamentals of Data Visualization by Claus O. Wilke  It's a guide to making visualizations that accurately reflect the data, tell a story, and look professional.  Read the open ",
+   "age": "2022-05-14T19:28:00.000Z"
+  }
+ ],
+ "recent": [
+  {
+   "url": "https://x.com/TheTuringPost/status/2102211422289567748",
+   "handle": "@TheTuringPost",
+   "likes": 3,
+   "rts": 2,
+   "replies": 0,
+   "media": 2,
+   "text": "There\u2019s so much from this week in AI that I want to show you \u2013 and it all connects to something I\u2019m especially excited about: AI\u2019s growing ability to understand and act in the world:  \u2022 Odyssey-3 \u2013 Co",
+   "age": "2026-09-22T01:40:34.000Z"
+  },
+  {
+   "url": "https://x.com/TheTuringPost/status/2102199481538326795",
+   "handle": "@TheTuringPost",
+   "likes": 83,
+   "rts": 12,
+   "replies": 3,
+   "media": 1,
+   "text": "Must-read papers of the week   JEPA-Anything  Modality-Autoregressive World-Action Models  In-Context Robot Learning with VLM Agents  Dream-RSI: Recursive Self-Improvement through Evolving Worlds  Mod",
+   "age": "2026-09-22T00:53:08.000Z"
+  },
+  {
+   "url": "https://x.com/TheTuringPost/status/2102138633897808044",
+   "handle": "@TheTuringPost",
+   "likes": 2,
+   "rts": 1,
+   "replies": 0,
+   "media": 4,
+   "text": "San Francisco is precious by moments like this.  Thank you, Sarah and swyx for organizing this dinner: amazing group of people, insightful conversations",
+   "age": "2026-09-21T20:51:20.000Z"
+  },
+  {
+   "url": "https://x.com/TheTuringPost/status/2102092826381365544",
+   "handle": "@TheTuringPost",
+   "likes": 7,
+   "rts": 3,
+   "replies": 2,
+   "media": 2,
+   "text": "8 Notable advancements and news in robotics that we can't miss   Figure\u2019s Helix 2.5 brings household skills to 30 new homes  Skild S1 learns from one video prompt  Facet-0 helps robots detect jammed p",
+   "age": "2026-09-21T17:49:19.000Z"
+  },
+  {
+   "url": "https://x.com/TheTuringPost/status/2101484502841270311",
+   "handle": "@TheTuringPost",
+   "likes": 17,
+   "rts": 2,
+   "replies": 3,
+   "media": 2,
+   "text": "I explored  @typesafeai 's Jev in a way even your grandma can understand.  And tested it with Codex (something anyone can do).  So if you already know everything about Jev, forward this video to someo",
+   "age": "2026-09-20T01:32:03.000Z"
+  }
+ ]
+}
