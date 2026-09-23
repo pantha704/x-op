@@ -7,3 +7,5 @@ media/
 .gitnexus/
 node_modules/
 *.log
+.claude/
+research/graphify-out/

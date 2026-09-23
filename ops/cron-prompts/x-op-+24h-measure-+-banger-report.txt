@@ -1,0 +1,1 @@
+Deterministic no-LLM job: runs measure_ledger.py (stamps likes/verdicts for replies aged 20h+) then banger_report.py. Output saved locally.

@@ -1,0 +1,63 @@
+---
+name: x-post-craft
+description: "Use when drafting X posts for @your_handle."
+version: 1.0.0
+platforms: [linux]
+metadata:
+  hermes:
+    tags: [x, twitter, content, writing, posts]
+---
+
+# X Post Craft (@your_handle)
+
+The writing skill for POSTS. Replies use `targets/voice-spec-g.md`; posts use both (voice there, formats here).
+
+## The rule that beats all: keep it short and easy to read (owner, 2026-09-23)
+- Default: **45-110 chars**, one idea, reads in 2 seconds. People scroll fast; short gets read.
+- Longer ONLY when genuinely serious/useful: utility explainers up to ~280; deep pieces go to X Articles (`x-article-publisher-skill`).
+- Never essays. If a draft needs a paragraph, it is a card image or an article - not a post.
+
+## Never chase attention (owner directive 2026-09-22)
+No thirst, no bait, no notice-me energy. Genuine > engagement. If a line exists only to farm reactions, kill it. Quiet sincerity is allowed. Attention is a byproduct.
+
+## Formats (lanes)
+1. **Utility** (the goldmine - copy-link weight 20.0 = 40x a like): a tool/repo/method that directly helps someone. Name + what it does in one line + why you want it. People save and send these.
+2. **Quote** (counts toward the 500K like any post; QuoteWeight 5.0): a standalone take/joke/fact on a big fresh post. Genuine commentary that adds something - never 'this'.
+3. **Funny / mic-drop**: absurd observation, joke about something senseless, one-liner with a turn in the last clause. Fluid, human.
+4. **Nostalgia**: a game/anime/show memory written like a person who felt it. Specific detail beats generic love.
+5. **Trend take**: fast, specific, our voice on what is hot (from `drafts/TREND-QUEUE.md`). Ride early.
+
+## The interaction hook (baked in - never a bare appended question)
+Every post subtly invites a pick, a side, a correction, an answer. 'like if you agree' energy is dead on arrival. A take so specific people want to argue counts.
+
+## Craft rules
+- lowercase; no dashes, @, #, or links in the text (source links live in the draft item; owner decides)
+- one idea; one metaphor max; no invented numbers
+- first 4 words = the hook (they show even truncated)
+- no engagement-bait CTAs (program violation + algorithm penalty)
+- read-aloud test: typed-in-four-seconds beats essay voice
+- images ~2x engagement and help the >=50% visible rule
+
+## Flow (draft-first, always)
+1. Draft -> append to `drafts/DRAFT-QUEUE.md` (format in `drafts/README.md`)
+2. Owner reviews / refines
+3. Fired only after approval: `post_publish.py` / `quote_publish.py`
+
+## Cadence & the cold-start lift (from the field dossier)
+- **3-5 originals/day, SPACED - never batched.** Under 1,000 followers the algo lifts ONE post per feed-request to slot ~15-16, and the lift dies at 1,000 impressions; each post needs its own turn in the day.
+- **First 30 minutes after posting = the sprint:** reply to every commenter fast. Early velocity decides distribution (replies 5.0 weight + mutual-follow boost).
+- **The bar:** verified impressions ~2-5% of views -> 500K/90d needs ~10-25M views. Bangers, not just posts.
+- **Never:** links in the post, 3+ hashtags, engagement-bait CTAs, pod coordination (no ranking impact).
+
+## The individual-with-experience test (owner directive 2026-09-23)
+
+Every draft must sound like a person with experience and an opinion, not a news headline or a product blurb. Lead with the lived moment or the take; the tool/topic is the punchline, not the subject. Test: would someone who actually used/knows this say it in a group chat? If it reads like a changelog, a report, or a feature list, rewrite it. "i stopped googling json formatter every week" beats "it-tools keeps the boring converters in one tab". Experience words (i stopped, saved me, haven't lost since, years of) + a verdict = the voice.
+
+## The compose-wide method (owner-approved 2026-09-23)
+For replies and quotes: write **5 candidates fast** in persona voice, then **kill the 4 safest** - the keeper must pass the SCREENSHOT TEST (a stranger would screenshot it and send it to a group chat). Sharpen the turn in the last clause, tighten to 45-110, then run the mechanical gates (qc_botcheck + punch) untouched. Selection pressure beats polish: compose wide, kill hard, keep one.
+
+## Pre-save check
+- Would a stranger screenshot it?
+- Does it help someone or make them feel something?
+- Is it thirst or bait? (kill)
+- Can it be shorter? (trim again)

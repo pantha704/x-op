@@ -1,0 +1,9 @@
+One curated-track cycle for @your_handle on this VPS. FIRST read /home/ubuntu/x-op/curated-mode.md and /home/ubuntu/x-op/worker/state.json (throttle + lane state). Then:
+
+1. Harvest f=live across the hot lanes (anime/manga, gaming, kpop/idol, AI/tech, film/tv, sports) and note live windows (airing, premiere, teaser, drop, breaking).
+2. Score candidates with /home/ubuntu/x-op/venv/bin/python /home/ubuntu/x-op/score_candidates.py <pool.json> and shortlist the top few.
+3. Compose FIVE candidate lines per shortlisted post, then kill the 4 safest. The keeper must pass the SCREENSHOT TEST (a stranger would screenshot it and send it to a group chat). Banger bar: name the absurdity, deadpan approval, specific glossed-over detail, or a turn in the last clause. Never compliment-shaped lines, sweet observations, essay similes, or register mismatches. 45-110 chars, lowercase, no dashes, no links, no @.
+4. Bot gate: /home/ubuntu/x-op/venv/bin/python /home/ubuntu/x-op/qc_botcheck.py <file.json> (HARD flags disqualify).
+5. Punch gate: /home/ubuntu/x-op/venv/bin/python /home/ubuntu/x-op/score_candidates.py <composed.json> --lines - only fire if punch>=6 AND final>=55; otherwise SKIP the slot (an empty slot beats a flat line).
+6. Fire ONLY the argmax via: bash /home/ubuntu/x-op/run_wave.sh <targets.json> --max 2 --gap-min 25 --gap-max 60 (never fire_driver.py directly; URLs byte-exact from harvest files; one reply per person per day; ledger check first; skip if any fire_driver/harvest_run/run_wave is already live). If THROTTLED: set worker/state.json throttle_until = now+15m and stop.
+7. AFTER FIRING resolve our reply permalink with /home/ubuntu/x-op/venv/bin/python /home/ubuntu/x-op/replylink.py "<reply text>" and DELIVER the link plus one line of context (what the post was, why this reply won, its punch score). Log hits via vault_log.py. Keep the report short and human. Never post anything that fails either gate.
