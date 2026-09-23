@@ -133,3 +133,83 @@
 - media: none
 - why: v5 question lane - gaming variant, both titles fresh in the trend feed
 - created: 2026-09-23T10:26:42Z
+
+## [DRAFT-P-01-20260923] post | pending
+- genre: AI/tech
+- target: n/a (original post)
+- text: "local models keep me honest about how much i actually need the big ones"
+- media: none
+- why: v5+genre - builders dialect; local-vs-frontier angle people argue about
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-02-20260923] post | pending
+- genre: AI/tech
+- target: n/a (original post)
+- text: "spent twenty minutes picking a model and then rewrote the prompt anyway. every single time"
+- media: none
+- why: v5+genre - builder self-awareness; everyone does this
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-03-20260923] post | pending
+- genre: gaming
+- target: n/a (original post)
+- text: "sale haul: three games. playtime so far: zero. i know exactly what i am"
+- media: none
+- why: v5+genre - backlog culture; relatable confession
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-04-20260923] post | pending
+- genre: gaming
+- target: n/a (original post)
+- text: "going into silent hill townfall blind. no trailers, no threads, no spoilers this time"
+- media: none
+- why: v5+genre - blind-run culture; fresh title from the trend feed
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-05-20260923] post | pending
+- genre: gaming Q
+- target: n/a (original post)
+- text: "blind first playthrough or wiki on the second monitor, what would you pick"
+- media: none
+- why: v5+genre - question lane; classic gamer debate, invites sides
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-06-20260923] post | pending
+- genre: anime
+- target: n/a (original post)
+- text: "manga readers watching anime onlys speculate is my favorite spectator sport"
+- media: none
+- why: v5+genre - fandom in-joke; source-reader perspective, not mean
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-07-20260923] post | pending
+- genre: anime
+- target: n/a (original post)
+- text: "new episode day used to be an event. some shows still make it one"
+- media: none
+- why: v5+genre - nostalgia + current love; fandom feeling
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-08-20260923] post | pending
+- genre: anime Q
+- target: n/a (original post)
+- text: "sub or dub, what would you pick"
+- media: none
+- why: v5+genre - question lane; the eternal fandom debate
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-09-20260923] post | pending
+- genre: internet
+- target: n/a (original post)
+- text: "some of the best sites on the internet are one person's weekend project that never died"
+- media: none
+- why: v5+genre - warm observation; internet-culture register
+- created: 2026-09-23T10:30:34Z
+
+## [DRAFT-P-10-20260923] post | pending
+- genre: tech
+- target: n/a (original post)
+- text: "the fix for tab chaos was one window per project. should have done this years ago"
+- media: none
+- why: v5+genre - practical tip; dev register, light self-roast
+- created: 2026-09-23T10:30:34Z
