@@ -253,6 +253,7 @@ The lane was idling ~13 min between waves (measured: wave fires 20 replies in ~1
 
 - After a successful detached launch, the cycle does NOT end: it harvests fresh, selects, composes-wide (5->kill 4), QC's up to `max_per_cycle`, and writes the batch ATOMICALLY to `worker/prep-batch.json` (`{"prep_ts", "count", "targets": [{url,text,tags}]}` - tmp file then `mv`).
 - The next cycle checks `prep-batch.json` FIRST: `prep_ts` under 25 min => re-validate (drop fired dups + anything >60 min old) and use it, topping up fresh only if <8 survive. Missing/stale => normal hot path. Delete the file after a launch that printed `detached pid=`.
+- **PREP FRESHNESS (hard-won 2026-09-23)**: prep picks must be <30 min old at prep time - the 60m post-age cap at the next reval silently kills everything older (a mixed-age pool left ~1 usable keeper; that cycle recovered by firing the 20 composed keepers as an immediate second wave). If the fresh pool is thin, still only prep what will survive reval; never let composed work rot in prep.
 - Result: waves chain back to back - launch within ~1 min of the flock freeing. ~20 replies per ~15 min sustained instead of per ~27 min; the human-like gaps never change.
 - If a prep pass dies mid-way, the file is simply absent and the next cycle falls back to harvest+compose - never a partial batch.
 
