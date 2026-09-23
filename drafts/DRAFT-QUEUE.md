@@ -238,7 +238,7 @@
 - target: https://addy.io/
 - url: https://addy.io/
 - media: media/util-shots/addy.jpg
-- text: "signed up with an alias, spam showed up, alias off. addy. my real inbox never saw it"
+- text: "if you're signing up for anything sketchy, use an addy alias instead of your real email. spam goes there and dies quietly"
 - media: none
 - why: alias can be killed when spam starts; lived sequence, not a product blurb
 - created: 2026-09-23T10:40:00Z
@@ -247,7 +247,7 @@
 - target: https://explainshell.com/
 - url: https://explainshell.com/
 - media: media/util-shots/explainshell.jpg
-- text: "copied a one liner off a thread and had no idea what it did. explainshell named every flag"
+- text: "before you run a command you copied off the internet, paste it into explainshell first. it explains every flag"
 - media: none
 - why: paste a command, each flag mapped to its help text
 - created: 2026-09-23T10:40:00Z
@@ -256,7 +256,7 @@
 - target: https://backloggd.com/
 - url: https://backloggd.com/
 - media: media/util-shots/backloggd.jpg
-- text: "steam remembers what i bought. backloggd is where i write down what i actually finished"
+- text: "backloggd if you want letterboxd for games. finally know what you've actually finished instead of what you own"
 - media: none
 - why: purchase history vs a personal play log
 - created: 2026-09-23T10:40:00Z
@@ -265,7 +265,7 @@
 - target: https://openwebui.com/
 - url: https://openwebui.com/
 - media: media/util-shots/openwebui.jpg
-- text: "i talk to local models in open webui now. same models, i just stopped copy pasting into a terminal"
+- text: "if you're running local models, open webui makes them feel like a real chat app instead of terminal copy pasting"
 - media: none
 - why: self hosted chat for local models; builder register
 - created: 2026-09-23T10:40:00Z
@@ -283,7 +283,7 @@
 - target: https://free-for.dev/
 - url: https://free-for.dev/
 - media: media/util-shots/freefordev.jpg
-- text: "someone asks for a free tier that is not a trap and i send free for dev. the list is the answer"
+- text: "if you ever need a free tier that isn't a trap, free for dev keeps a list of the actually usable ones. bookmark it"
 - media: none
 - why: the list people forward when a free tier already exists
 - created: 2026-09-23T10:40:00Z
@@ -292,7 +292,7 @@
 - target: https://github.com/aniskip/aniskip-extension
 - url: https://github.com/aniskip/aniskip-extension
 - media: media/util-shots/aniskip.jpg
-- text: "rewatching means the op is homework. aniskip does that part and i stay for the episode"
+- text: "if you rewatch anime, get aniskip. it skips the opening for you so you just get the episode. tiny thing, big difference"
 - media: none
 - why: crowdsourced opening and ending skip; fandom register
 - created: 2026-09-23T10:40:00Z
@@ -301,7 +301,7 @@
 - target: https://jsoncrack.com/
 - url: https://jsoncrack.com/
 - media: media/util-shots/jsoncrack.jpg
-- text: "i paste ugly api responses into jsoncrack now. the graph does what scrolling never did"
+- text: "paste any ugly api response into jsoncrack and it turns into a graph you can actually read. json stops hurting"
 - media: none
 - why: json tree graph; page says data stays on the device
 - created: 2026-09-23T10:40:00Z
@@ -310,7 +310,7 @@
 - target: https://www.steamgriddb.com/
 - url: https://www.steamgriddb.com/
 - media: media/util-shots/steamgriddb.jpg
-- text: "heroic and itch games looked unofficial until steamgriddb. the shelf finally matches"
+- text: "if your heroic and itch games look fake on the shelf, steamgriddb fixes the art. the shelf finally looks real"
 - media: none
 - why: custom library art for non steam launchers; gaming register
 - created: 2026-09-23T10:40:00Z
@@ -319,7 +319,7 @@
 - target: https://www.livechart.me/
 - url: https://www.livechart.me/
 - media: media/util-shots/livechart.jpg
-- text: "what airs tonight is a livechart question now. i stopped trusting the group chat for times"
+- text: "stop asking the group chat what time things air. livechart has every show's schedule in one place"
 - media: none
 - why: airing chart with slots; fandom register
 - created: 2026-09-23T10:40:00Z
