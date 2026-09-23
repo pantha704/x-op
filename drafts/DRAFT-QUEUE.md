@@ -8,11 +8,11 @@
 
 **V5 NATURAL PASS 2026-09-23: owner verdict — v4 was too extrovert, "looks like acting". Softened to natural warmth: expressive but never performative (no "not me...", no shouted emphasis, no dramatic declarations). Feelings still show, they just don't announce themselves. PLUS new QUESTION lane: natural open-ended pick questions (owner format: "gpt 6 sol or opus 5.5, what would you pick" / "...for [scenario]" or bare) — genuine, invites real answers.**
 
-## [DRAFT-Q-20260923-01] quote | pending
+## [DRAFT-Q-20260923-01] quote | killed-offgenre
 - target: https://x.com/JJK_Times/status/2102652380588445787
 - text: "hublot bought the whole city and i still couldn't tell you what the watch looks like\nhttps://x.com/JJK_Times/status/2102652380588445787"
 - media: none
-- why: v5 - deadpan confidence instead of the clever-symmetry joke; Hublot/JK takeover
+- why: KILLED 2026-09-23 genre lock (watch ad, not anime/games/tech). do not post
 - created: 2026-09-23T08:29:00Z
 
 ## [DRAFT-Q-20260923-05] quote | pending
@@ -36,11 +36,11 @@
 - why: v5 - affection; 13.7k-like one piece post
 - created: 2026-09-23T08:05:00Z
 
-## [DRAFT-Q-20260923-08] quote | pending
+## [DRAFT-Q-20260923-08] quote | killed-offgenre
 - target: https://x.com/FabrizioRomano/status/2102652936866140482
 - text: "three leagues and five ballons before winning anything. i want to be this delusional about my own life\nhttps://x.com/FabrizioRomano/status/2102652936866140482"
 - media: none
-- why: v5 - warm envy; Yamal ambition quote
+- why: KILLED 2026-09-23 genre lock (sports/Yamal). do not post
 - created: 2026-09-23T08:05:00Z
 
 ## [DRAFT-U-20260923-08] utility | pending
