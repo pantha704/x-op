@@ -45,6 +45,8 @@
 
 ## [DRAFT-U-20260923-08] utility | pending
 - target: https://www.protondb.com/
+- url: https://www.protondb.com/
+- media: media/util-shots/protondb.jpg
 - text: "i trust protondb comments more than the verified badge. they have never let me down"
 - media: none
 - why: v5 - betrayed trust, community gratitude; steam deck badge vs launch reports
@@ -52,6 +54,8 @@
 
 ## [DRAFT-U-20260923-09] utility | pending
 - target: https://isthereanydeal.com/
+- url: https://isthereanydeal.com/
+- media: media/util-shots/isthereanydeal.jpg
 - text: "i check isthereanydeal before every sale now. the price history has saved me from the banner more than once"
 - media: none
 - why: v5 - disillusionment, immunity; price history before the banner
@@ -59,6 +63,8 @@
 
 ## [DRAFT-U-20260923-10] utility | pending
 - target: https://www.photopea.com/
+- url: https://www.photopea.com/
+- media: media/util-shots/photopea.jpg
 - text: "opened a psd on a laptop with no photoshop and photopea just handled it. that site deserves more credit than it gets"
 - media: none
 - why: v5 - quiet gratitude; browser psd editor
@@ -66,6 +72,8 @@
 
 ## [DRAFT-U-20260923-11] utility | pending
 - target: https://saucenao.com/
+- url: https://saucenao.com/
+- media: media/util-shots/saucenao.jpg
 - text: "i use saucenao before i credit any art now. one very confident wrong guess was enough for me"
 - media: none
 - why: v5 - redeemed shame; image source search
@@ -73,6 +81,8 @@
 
 ## [DRAFT-U-20260923-12] utility | pending
 - target: https://sponsor.ajay.app/
+- url: https://sponsor.ajay.app/
+- media: media/util-shots/sponsorblock.jpg
 - text: "first thing i install on any new laptop is sponsorblock. went without it once and that was plenty"
 - media: none
 - why: v5 - mild outrage, homecoming; crowdsourced sponsor skip
@@ -80,6 +90,8 @@
 
 ## [DRAFT-U-20260923-13] utility | pending
 - target: https://gchq.github.io/CyberChef/
+- url: https://gchq.github.io/CyberChef/
+- media: media/util-shots/cyberchef.jpg
 - text: "i do all my encoding in cyberchef now. everything stays in the browser and nothing gets sent anywhere"
 - media: none
 - why: v5 - earned paranoia; client-side encode/decode
@@ -87,6 +99,8 @@
 
 ## [DRAFT-U-20260923-14] utility | pending
 - target: https://haveibeenpwned.com/
+- url: https://haveibeenpwned.com/
+- media: media/util-shots/hibp.jpg
 - text: "haveibeenpwned keeps finding old emails of mine in breaches. it remembers accounts i forgot i ever made"
 - media: none
 - why: v5 - quiet dread, memory; breach lookup
@@ -94,6 +108,8 @@
 
 ## [DRAFT-U-20260923-15] utility | pending
 - target: https://syncthing.net/
+- url: https://syncthing.net/
+- media: media/util-shots/syncthing.jpg
 - text: "my notes sync between my machines now, no cloud, no login. syncthing just quietly does its job"
 - media: none
 - why: v5 - ownership, relief; continuous sync, no central store
@@ -101,6 +117,8 @@
 
 ## [DRAFT-U-20260923-16] utility | pending
 - target: https://caniuse.com/
+- url: https://caniuse.com/
+- media: media/util-shots/caniuse.jpg
 - text: "watched a demo die on someone else's phone once. i check caniuse every time now"
 - media: none
 - why: v5 - remembered embarrassment, protection; browser support tables
@@ -108,6 +126,8 @@
 
 ## [DRAFT-U-20260923-17] utility | pending
 - target: https://web.archive.org/
+- url: https://web.archive.org/
+- media: media/util-shots/wayback.jpg
 - text: "wayback still had the page when everything else forgot it. i like that nothing is ever fully gone"
 - media: none
 - why: v5 - loss, comfort; archive lookup
@@ -216,6 +236,8 @@
 
 ## [DRAFT-U-20260923-18] utility | pending
 - target: https://addy.io/
+- url: https://addy.io/
+- media: media/util-shots/addy.jpg
 - text: "signed up with an alias, spam showed up, alias off. addy. my real inbox never saw it"
 - media: none
 - why: alias can be killed when spam starts; lived sequence, not a product blurb
@@ -223,6 +245,8 @@
 
 ## [DRAFT-U-20260923-19] utility | pending
 - target: https://explainshell.com/
+- url: https://explainshell.com/
+- media: media/util-shots/explainshell.jpg
 - text: "copied a one liner off a thread and had no idea what it did. explainshell named every flag"
 - media: none
 - why: paste a command, each flag mapped to its help text
@@ -230,6 +254,8 @@
 
 ## [DRAFT-U-20260923-20] utility | pending
 - target: https://backloggd.com/
+- url: https://backloggd.com/
+- media: media/util-shots/backloggd.jpg
 - text: "steam remembers what i bought. backloggd is where i write down what i actually finished"
 - media: none
 - why: purchase history vs a personal play log
@@ -237,6 +263,8 @@
 
 ## [DRAFT-U-20260923-21] utility | pending
 - target: https://openwebui.com/
+- url: https://openwebui.com/
+- media: media/util-shots/openwebui.jpg
 - text: "i talk to local models in open webui now. same models, i just stopped copy pasting into a terminal"
 - media: none
 - why: self hosted chat for local models; builder register
@@ -244,6 +272,8 @@
 
 ## [DRAFT-U-20260923-22] utility | pending
 - target: https://devdocs.io/
+- url: https://devdocs.io/
+- media: media/util-shots/devdocs.jpg
 - text: "devdocs or a new tab for every docs site, what would you pick"
 - media: none
 - why: question-shaped pick; combined offline docs vs a tab per site
@@ -251,6 +281,8 @@
 
 ## [DRAFT-U-20260923-23] utility | pending
 - target: https://free-for.dev/
+- url: https://free-for.dev/
+- media: media/util-shots/freefordev.jpg
 - text: "someone asks for a free tier that is not a trap and i send free for dev. the list is the answer"
 - media: none
 - why: the list people forward when a free tier already exists
@@ -258,6 +290,8 @@
 
 ## [DRAFT-U-20260923-24] utility | pending
 - target: https://github.com/aniskip/aniskip-extension
+- url: https://github.com/aniskip/aniskip-extension
+- media: media/util-shots/aniskip.jpg
 - text: "rewatching means the op is homework. aniskip does that part and i stay for the episode"
 - media: none
 - why: crowdsourced opening and ending skip; fandom register
@@ -265,6 +299,8 @@
 
 ## [DRAFT-U-20260923-25] utility | pending
 - target: https://jsoncrack.com/
+- url: https://jsoncrack.com/
+- media: media/util-shots/jsoncrack.jpg
 - text: "i paste ugly api responses into jsoncrack now. the graph does what scrolling never did"
 - media: none
 - why: json tree graph; page says data stays on the device
@@ -272,6 +308,8 @@
 
 ## [DRAFT-U-20260923-26] utility | pending
 - target: https://www.steamgriddb.com/
+- url: https://www.steamgriddb.com/
+- media: media/util-shots/steamgriddb.jpg
 - text: "heroic and itch games looked unofficial until steamgriddb. the shelf finally matches"
 - media: none
 - why: custom library art for non steam launchers; gaming register
@@ -279,6 +317,8 @@
 
 ## [DRAFT-U-20260923-27] utility | pending
 - target: https://www.livechart.me/
+- url: https://www.livechart.me/
+- media: media/util-shots/livechart.jpg
 - text: "what airs tonight is a livechart question now. i stopped trusting the group chat for times"
 - media: none
 - why: airing chart with slots; fandom register

@@ -3,6 +3,8 @@
 **Owner rule (2026-09-22):** every post is drafted for review before firing. Replies stay autonomous; **posts never auto-fire**.
 
 ## Files
+**UTILITY MEDIA HARD RULE (owner 2026-09-23):** every utility item carries (1) `url:` the tool's working link - also placed as the last line of the draft text so the owner can cut it into a comment - and (2) `media:` the landing-page screenshot/logo, attached to the X draft (`post_draft.py --media`; capture via `ops/shoot_landing.py <name> <url>`).
+
 - `DRAFT-QUEUE.md` — posts awaiting review. Lanes: `quote | utility | question | funny | nostalgia | trend`. Status flow: `pending -> approved -> fired` (or `rejected`).
 - `TREND-QUEUE.md` — the trend scout's daily research doc (20-30 current items in our genres; owner picks which to turn into drafts).
 
