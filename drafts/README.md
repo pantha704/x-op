@@ -3,7 +3,7 @@
 **Owner rule (2026-09-22):** every post is drafted for review before firing. Replies stay autonomous; **posts never auto-fire**.
 
 ## Files
-- `DRAFT-QUEUE.md` — posts awaiting review. Lanes: `quote | utility | funny | nostalgia | trend`. Status flow: `pending -> approved -> fired` (or `rejected`).
+- `DRAFT-QUEUE.md` — posts awaiting review. Lanes: `quote | utility | question | funny | nostalgia | trend`. Status flow: `pending -> approved -> fired` (or `rejected`).
 - `TREND-QUEUE.md` — the trend scout's daily research doc (20-30 current items in our genres; owner picks which to turn into drafts).
 
 ## X native drafts (owner directive 2026-09-23)
