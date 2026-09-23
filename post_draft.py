@@ -5,7 +5,7 @@ Saves the draft into the account's composer (X keeps it under Drafts, syncs to t
 Usage: post_draft.py "<text>" [--media /path/to/image.jpg]
 Prints OK + a note; never publishes.
 """
-import asyncio, json, sys
+import asyncio, json, re, sys
 from mcp import ClientSession
 from mcp.client.streamable_http import streamable_http_client
 
@@ -86,19 +86,26 @@ async def main():
             r1 = await call(s, "cloak_evaluate", {"page_id": page, "expression": OPEN_JS})
             print("open:", r1[:120])
             await asyncio.sleep(1.6)
-            print("clear:", (await call(s, "cloak_evaluate", {"page_id": page, "expression": CLEAR_JS}))[:120])
-            await asyncio.sleep(0.6)
-            # MULTILINE-SAFE INSERT (2026-09-23): a single insertText with "\n" gets mangled by
-            # X's linkify/autosave (first line eaten). Two-step insert is stable:
-            # insert line 1, settle, then insert "\n" + rest.
-            if "\n" in text:
-                first, rest = text.split("\n", 1)
-                r2 = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps(first))})
-                print("type1:", r2[:160])
-                await asyncio.sleep(2.0)
-                r2b = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps("\n" + rest))})
-                print("type2:", r2b[:160])
+            # NATIVE TYPE (2026-09-23): JS execCommand inserts get mangled by X's linkify/autosave
+            # (first line eaten or duplicated). Native typing via cloak_type is stable with "\n".
+            ref = None
+            try:
+                snap_raw = await call(s, "cloak_snapshot", {"page_id": page})
+                try:
+                    snap = json.loads(snap_raw).get("snapshot", snap_raw)
+                except Exception:
+                    snap = snap_raw.replace("\\n", "\n")
+                idx = snap.find("[Modal/Dialog]")
+                seg = snap[idx:idx+1500] if idx != -1 else snap
+                m = re.search(r'\[@(e\d+)\] div\[textbox\]', seg)
+                ref = m.group(1) if m else None
+            except Exception as e:
+                print("snapshot err:", str(e)[:80])
+            if ref:
+                tr = await call(s, "cloak_type", {"page_id": page, "ref": ref, "text": text, "clear": True})
+                print("type:", tr[:120])
             else:
+                print("no ref; fallback JS insert")
                 r2 = await call(s, "cloak_evaluate", {"page_id": page, "expression": TYPE_JS.replace("__TEXT__", json.dumps(text))})
                 print("type:", r2[:160])
             await asyncio.sleep(1.6)

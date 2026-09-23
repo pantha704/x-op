@@ -5,6 +5,10 @@
 ## Files
 **UTILITY MEDIA HARD RULE (owner 2026-09-23):** every utility item carries (1) `url:` the tool's working link - also placed as the last line of the draft text so the owner can cut it into a comment - and (2) `media:` the landing-page screenshot/logo, attached to the X draft (`post_draft.py --media`; capture via `ops/shoot_landing.py <name> <url>`).
 
+**QUOTE URL HARD RULE (owner 2026-09-23):** every quote draft carries the target tweet URL as the LAST LINE of the text (post_quote_draft.py appends it automatically; owner cuts it into a comment when posting).
+
+**MULTILINE NOTE (2026-09-23):** JS execCommand inserts get mangled by X's linkify/autosave (first line eaten). post_draft.py / post_quote_draft.py use native typing (cloak_type via snapshot ref) - stable with newlines. Never revert to JS insertText for multiline.
+
 - `DRAFT-QUEUE.md` — posts awaiting review. Lanes: `quote | utility | question | funny | nostalgia | trend`. Status flow: `pending -> approved -> fired` (or `rejected`).
 - `TREND-QUEUE.md` — the trend scout's daily research doc (20-30 current items in our genres; owner picks which to turn into drafts).
 

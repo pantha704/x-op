@@ -11,6 +11,7 @@ type -> verify card -> close -> Save sheet. Never publishes.
 """
 import asyncio
 import json
+import re
 import sys
 
 from mcp import ClientSession
@@ -112,13 +113,27 @@ async def main():
             mq = await ev(s, pid, MENU_JS)
             print("quote-menu:", mq)
             await asyncio.sleep(2.4)
-            # MULTILINE-SAFE (2026-09-23): comment first, settle, then "\n" + target url line.
-            comment, url_line = text.rsplit("\n", 1)
-            tp = await ev(s, pid, TYPE_JS % json.dumps(comment))
-            print("type1:", tp)
-            await asyncio.sleep(2.0)
-            tp2 = await ev(s, pid, APPEND_JS % json.dumps("\n" + url_line))
-            print("type2:", tp2)
+            # NATIVE TYPE (2026-09-23): stable with "\n" (JS inserts get mangled by linkify/autosave).
+            ref = None
+            try:
+                snap_raw = await call(s, "cloak_snapshot", {"page_id": pid})
+                try:
+                    snap = json.loads(snap_raw).get("snapshot", snap_raw)
+                except Exception:
+                    snap = snap_raw.replace("\\n", "\n")
+                idx = snap.find("[Modal/Dialog]")
+                seg = snap[idx:idx+1500] if idx != -1 else snap
+                m = re.search(r'\[@(e\d+)\] div\[textbox\]', seg)
+                ref = m.group(1) if m else None
+            except Exception as e:
+                print("snapshot err:", str(e)[:80])
+            if ref:
+                tr = await call(s, "cloak_type", {"page_id": pid, "ref": ref, "text": text, "clear": True})
+                print("type:", tr[:120])
+            else:
+                print("no ref; fallback JS insert")
+                tp = await ev(s, pid, TYPE_JS % json.dumps(text))
+                print("type:", tp)
             await asyncio.sleep(1.2)
             card = await ev(s, pid, CARD_JS.replace("__HANDLE__", handle))
             print("card:", card)
