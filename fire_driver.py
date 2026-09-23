@@ -225,10 +225,17 @@ async def main():
                     outcome = f"error:{type(e).__name__}"
                     traceback.print_exc()
                 if outcome == "THROTTLED":
-                    await asyncio.sleep(2)
-                    if await check_posted(s, page, text):
-                        outcome = "hit(post-verified)"
-                        print("   (throttle was a false alarm - reply is live)")
+                    # false-alarm guard: indexing lag can hide the reply on the first look;
+                    # retry up to 3x before declaring a real throttle (costly batch stop).
+                    for _chk in range(3):
+                        await asyncio.sleep(2 if _chk == 0 else 8)
+                        try:
+                            if await check_posted(s, page, text):
+                                outcome = "hit(post-verified)"
+                                print("   (throttle was a false alarm - reply is live)")
+                                break
+                        except Exception:
+                            pass
                 dt = round(time.time() - t0, 1)
                 line = {"ts": time.strftime("%H:%M:%S"), "url": url, "text": text,
                         "lang": t.get("lang", ""), "tags": t.get("tags", []),
