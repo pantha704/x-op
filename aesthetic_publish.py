@@ -142,6 +142,7 @@ async def main():
     no_permalink = "--no-permalink" in argv
     tag_handle = ""
     fallback_text = ""
+    src_url = ""
     pos = []
     i = 0
     while i < len(argv):
@@ -152,6 +153,8 @@ async def main():
             tag_handle = argv[i + 1].lstrip("@"); i += 2
         elif a == "--fallback-text" and i + 1 < len(argv):
             fallback_text = argv[i + 1]; i += 2
+        elif a == "--src" and i + 1 < len(argv):
+            src_url = argv[i + 1]; i += 2
         else:
             pos.append(a); i += 1
     if not pos:
@@ -187,6 +190,21 @@ async def main():
     except Exception as e:
         print("SCREEN ERROR (fail closed):", str(e)[:90])
         sys.exit(8)
+
+    # --- DUPLICATE HARD GATE (owner: never post the same image twice, ever) ---
+    import hashlib
+    img_hash = hashlib.sha256(open(img_path, "rb").read()).hexdigest()
+    REG = "worker/aesthetic-posted.jsonl"
+    if os.path.exists(REG):
+        try:
+            for line in open(REG):
+                if line.strip() and json.loads(line).get("sha256") == img_hash:
+                    print("DUPLICATE BLOCKED: this image was already posted (hash match)")
+                    sys.exit(9)
+        except SystemExit:
+            raise
+        except Exception:
+            pass
 
     async with streamable_http_client(URL) as ctx:
         async with ClientSession(ctx[0], ctx[1]) as s:
@@ -289,6 +307,10 @@ async def main():
                 await call(s, "cloak_close_page", {"page_id": pid})
             except Exception:
                 pass
+
+    if outcome == "hit":
+        with open("worker/aesthetic-posted.jsonl", "a") as fh:
+            fh.write(json.dumps({"sha256": img_hash, "file": img_path, "ts": time.strftime("%H:%M:%S"), "src": src_url}) + "\n")
 
     os.makedirs("logs", exist_ok=True)
     entry = {"ts": time.strftime("%H:%M:%S"), "date": time.strftime("%Y-%m-%d"), "type": "aesthetic",

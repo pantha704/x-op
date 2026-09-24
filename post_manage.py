@@ -37,9 +37,11 @@ async def ev(s, pid, js):
 CARET_JS = r"""JSON.stringify((() => {
   const a = document.querySelector('article[data-testid="tweet"]');
   const scope = a || document;
-  const b = scope.querySelector('[data-testid="caret"]');
+  let b = scope.querySelector('[data-testid="caret"]');
+  if (!b) b = [...scope.querySelectorAll('[role="button"], button')].find(x => (x.getAttribute('aria-label')||'') === 'More');
+  if (!b) b = [...document.querySelectorAll('[role="button"], button')].find(x => (x.getAttribute('aria-label')||'') === 'More');
   if (!b) return {ok:false, why:'no caret'};
-  b.click(); return {ok:true};
+  b.click(); return {ok:true, via: b.getAttribute('data-testid')||'aria-More'};
 })())"""
 
 MENU_JS = r"""JSON.stringify((() => {
@@ -105,7 +107,7 @@ async def main():
             await s.initialize()
             np = json.loads(await call(s, "cloak_new_page", {"url": url}))
             pid = np.get("page_id") or np.get("id")
-            await asyncio.sleep(6)
+            await asyncio.sleep(9)
 
             c = await ev(s, pid, CARET_JS)
             print("caret:", json.dumps(c)[:120])

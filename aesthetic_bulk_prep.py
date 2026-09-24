@@ -149,6 +149,20 @@ def main():
             data = urllib.request.urlopen(req, timeout=30).read()
             if len(data) < 15000:
                 raise Exception(f"too small: {len(data)}")
+            import hashlib as _h
+            _hh = _h.sha256(data).hexdigest()
+            if os.path.exists("worker/aesthetic-posted.jsonl"):
+                _dup = False
+                for _l in open("worker/aesthetic-posted.jsonl"):
+                    try:
+                        if _l.strip() and json.loads(_l).get("sha256") == _hh:
+                            _dup = True
+                            break
+                    except Exception:
+                        pass
+                if _dup:
+                    print("skip dup (already posted):", r["img"][:70], flush=True)
+                    continue
             open(dest, "wb").write(data)
         except Exception as e:
             print("dl fail:", r["img"][:70], str(e)[:70], flush=True)

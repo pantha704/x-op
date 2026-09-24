@@ -34,6 +34,8 @@ for i, e in enumerate(entries):
 
     if e.get("tag"):
         cmd += ["--tag", e["tag"], "--fallback-text", e["tag"]]
+    if e.get("url"):
+        cmd += ["--src", e["url"]]
     try:
         r = subprocess.run(cmd, capture_output=True, text=True, timeout=420)
         out = (r.stdout or "") + (r.stderr or "")
@@ -54,6 +56,9 @@ for i, e in enumerate(entries):
             break
         if "screen blocked" in low:
             print(f"[{i+1}/{len(entries)}] skip (NSFW gate) {e['image']}", flush=True)
+            continue
+        if "duplicate blocked" in low:
+            print(f"[{i+1}/{len(entries)}] skip (already posted) {e['image']}", flush=True)
             continue
         fail += 1
         consec += 1
