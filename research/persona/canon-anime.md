@@ -22,6 +22,10 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 | Chainsaw Man | Reze Arc movie → Crunchyroll Feb 10, 2026. Next: "Assassins Arc" anime (International Assassins), 2027, MAPPA, dir. Tatsuya Yoshihara. |
 | Solo Leveling | Movie "Solo Leveling: Beyond the System" in production (announced Anime Expo, Jul 3, 2026; post–Jeju Island arcs). S3 window 2027–2028. A-1 returns; dir. Tao Tajima. Won Best Animation + Best Action at Crunchyroll Anime Awards 2026. |
 | Frieren | S2 aired Jan 16 – Mar 27, 2026 (10 eps). S3 "Golden Land Arc" announced for October 2027. Manga ongoing. |
+| Kaguya-sama: Love is War | 2-episode special returned on Crunchyroll (early 2026); a FINALE FILM is in the works = the anime's conclusion. Manga ended 2022. |
+| Fullmetal Alchemist | No new FMA anime. Arakawa's spiritual successor "Daemons of the Shadow Realm" (Yomi no Tsugai) anime has a release date + trailer (2026). FMA:B (2009) remains the definitive adaptation. |
+| Elfen Lied | 2026: a full-blown SEQUEL series in the works (not a remake) — first new material in ~two decades. Original 2004 (13 eps). |
+| Another | 2012 horror series + OVA ep 0; completed, no news. The gateway horror anime. |
 
 ---
 
@@ -331,3 +335,75 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 ---
 
 *Digest compiled Sept 2026; status re-verified Sept 24, 2026. Update the snapshot table when new seasons are announced.*
+
+---
+
+## Kaguya-sama: Love Is War (Kaguya-sama wa Kokurasetai)
+
+**Status 2026:** TV run S1 2019, S2 2020, S3 2022; film "The First Kiss That Never Ends" 2022. Early 2026: 2-ep special on Crunchyroll + a FINALE FILM in production. Manga ended 2022 (Akasaka).
+
+**Cast (exact spellings):** Kaguya Shinomiya, Miyuki Shirogane, Chika Fujiwara, Yu Ishigami, Ai Hayasaka, Miko Iino, Tsubame Koyasu, Kei Shirogane, Nagisa Kashiwagi, Papa Shirogane. Mass Media Club fangirls: Karen Kino, Erika Kose.
+
+**Core beats fans reference:** the war = two genius idiots playing 4D chess to make the OTHER confess first; Kaguya's two faces (ice-cold heiress vs blushing mess); Shirogane working part-time jobs in secret; the student council election; Ishigami's redemption arcs (rooted for by everyone); the school festival and the kiss; "Ice Kaguya" during the culture festival; Shirogane's rise to Stanford plans; the Shinomiya succession arc endgame; the clock tower confession.
+
+**Iconic moments/lines:** "O kawaii koto" (Fujiwara's "how cute") — the franchise's catchphrase; the Chika dance ED ("Chikatto Chika Chika") that broke the internet; Shirogane's broken English flexes; the rap battle; Hayasaka's endless personas; the mind-game zoom faces (the show's visual language); the balloon-art episode.
+
+**Memes:** "O kawaii koto" as universal sarcasm; Chika dance; "war mode"; Ishigami = relatable depression icon ("protect Ishigami"); "kaguya would say o kawaii koto"; Hayasaka best girl discourse.
+
+**What fans argue:** Ishigami x Iino vs Ishigami x Tsubame; whether the final arc/film sticks the landing; anime vs manga pacing of the ice arc.
+
+**Tourist traps:** calling it a normal romcom — it's psychological-warfare comedy first; using "Kaguya-sama" as her name in casual sentences (that's the title honorific; she's Kaguya Shinomiya); assuming Chika is a love interest.
+
+---
+
+## Fullmetal Alchemist (Hagane no Renkinjutsushi / FMA: Brotherhood)
+
+**Status 2026:** no new FMA anime. Hiromu Arakawa's spiritual successor "Daemons of the Shadow Realm" (Yomi no Tsugai) anime has a release date + trailer (2026) — the next Arakawa hit. FMA: Brotherhood (2009-10) = the manga-faithful definitive version; the 2003 series diverged after ~ep 25.
+
+**Cast (exact spellings):** Edward Elric, Alphonse Elric, Winry Rockbell, Roy Mustang, Riza Hawkeye, Alex Louis Armstrong, Maes Hughes, Scar, Greed, Ling Yao, Lan Fan, May Chang, Olivier Mira Armstrong, King Bradley (Wrath), Lust, Envy, Gluttony, Sloth, Pride, Father, Van Hohenheim, Izumi Curtis, Shou Tucker, Nina Tucker, Solf J. Kimblee, Barry the Chopper, Maria Ross, Sheska, Pinako Rockbell.
+
+**Core beats fans reference:** "Equivalent exchange" = the law of the world; the failed human transmutation (Ed loses limbs, Al loses his body); state alchemists as dogs of the military; the Ishval genocide; philosopher's stones = condensed human souls; the homunculi and Father's plan; the Promised Day; Ed's final trade — his gate for Al's body.
+
+**Iconic moments/lines:** "It's a terrible day for rain." — Mustang (verbatim); "A lesson without pain is meaningless, because..." (Ed); "WHO ARE YOU CALLING SO SHORT YOU NEED A MICROSCOPE TO SEE HIM?!" (Ed's height gag, delivered at some volume); "This power has been passed down the Armstrong line for generations!" + sparkles; "I want everything." — Greed; "Nina... Alexander..." — the fandom's collective trauma; "A heart made fullmetal" — the closing line.
+
+**Memes:** "It's a terrible day for rain" (for anything sad/rainy); Ed's height rage; Armstrong sparkles; "Hughes must live" AU denial; "equivalent exchange" applied to trades/jokes; brotherhood vs 2003 = the eternal civil war.
+
+**What fans argue:** Brotherhood vs 2003 (absolute classic forum war — 03 darker/different ending, BH faithful); sub vs dub (BH dub = one of the beloved ones); "the Nina episode still hits harder on rewatch".
+
+**Tourist traps:** not knowing there are two series; reducing Ed to short jokes; getting the rain line's name or attribution wrong (it's Mustang, at Hughes's funeral).
+
+---
+
+## Another
+
+**Status 2026:** 2012 P.A. Works horror (13 eps + OVA ep 0 "The Other — Karma"); completed, no news. Novel by Yukito Ayatsuji (2009).
+
+**Cast (exact spellings):** Kouichi Sakakibara, Mei Misaki, Izumi Akazawa, Naoya Teshigawara, Yuuya Mochizuki, Reiko Mikami.
+
+**Core beats fans reference:** Class 3-3's curse — every few years an "extra" dead student joins the class and everyone around becomes death-prone; the countermeasure = treat the student as nonexistent; Mei = the eyepatched girl everyone ignores; the whole school treats it like normal until the deaths restart; the umbrellas; the inn (finale bloodbath); the reveal of who the dead one is.
+
+**Iconic moments:** the umbrella on the stairs (the franchise's signature death); Mei at the hospital with the doll eye; "the nonexistent" policy explained; the classroom count reveal; the inn chaos.
+
+**Memes:** "final destination: the anime"; "do NOT transfer into class 3-3"; "Yomiyama energy"; Mei = the original silent best girl; umbrella stock footage ruined forever.
+
+**What fans argue:** the identity of the extra (every rewatch = new theories); anime vs novel vs live-action film; whether the deaths get too absurd.
+
+**Tourist traps:** spoiling the extra's identity casually — it's THE thing you don't spoil; calling Mei creepy instead of tragic; assuming it's a ghost story only (it's a curse/mechanism story).
+
+---
+
+## Elfen Lied
+
+**Status 2026:** original 2004 (13 eps, arms=gore institution); a full-blown SEQUEL series is in the works (2026) — first new material in ~two decades. Manga is longer and ends differently (the anime stops mid-story and diverges).
+
+**Cast (exact spellings):** Lucy / Nyu, Kohta, Yuka, Mayu, Nana, Kurama, Bando, Professor Kakuzawa, Mariko.
+
+**Core beats fans reference:** Diclonius = horned evolved humans with invisible vector arms; the research facility's isolation of them; Lucy's escape in the first minutes (the most infamous cold open in anime); her split personality "Nyu" (innocent, childlike) vs Lucy (the killer); Kohta's childhood connection to her; the Diclonius "queen" logic; the anime's ending vs the manga's.
+
+**Iconic moments/lines:** "Nyu!"; the opening "Lilium" (Latin choir — sacred-tier OP); the first five minutes (a content warning in motion); the vectors' invisible slaughter; the horn imagery.
+
+**Memes:** "the OP is beautiful, the show is a war crime"; "Elfen Lied walked so everything else could run"; 2004 kids got one (1) unique childhood; the eternal "watch it once, never again" cycle.
+
+**What fans argue:** anime ending vs manga ending (manga = the fuller story, far longer); whether the gore adds or numbs; Nyu = separate person or same soul debate.
+
+**Tourist traps:** reducing it to gore shock content (it's a grief story underneath); not knowing the anime diverges from the manga; misspelling "Diclonius".
