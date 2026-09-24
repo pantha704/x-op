@@ -160,16 +160,20 @@ async def main():
   const out = [];
   [...document.querySelectorAll('img')].forEach(i => {
     const s = i.src || '';
-    if (i.width < 150 || i.height < 150) return;
-    if (s.includes('images.unsplash.com')) out.push({pool:'unsplash', img:s.split('?')[0] + '?fm=jpg&q=80&w=1600'});
-    else if (s.includes('i.pinimg.com')) out.push({pool:'pinterest', img:s.replace('/236x/','/736x/').replace('/474x/','/736x/')});
+    if (s.includes('images.unsplash.com')) { if (i.width >= 150 && i.height >= 150) out.push({pool:'unsplash', img:s.split('?')[0] + '?fm=jpg&q=80&w=1600'}); }
+    else if (s.includes('i.pinimg.com') && !s.includes('60x60') && !s.includes('75x75') && !s.includes('30x30')) out.push({pool:'pinterest', img:s.replace('/236x/','/736x/').replace('/474x/','/736x/').replace('/564x/','/736x/')});
   });
   return out;
 })())"""
             for pool, url in STOCK:
                 try:
                     await call(s, "cloak_navigate", {"page_id": pid, "url": url})
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(6)
+                    if pool == "pinterest":  # lazy-load: scroll so real pins render
+                        for y in (1400, 2800):
+                            await call(s, "cloak_evaluate", {"page_id": pid,
+                                "expression": "window.scrollTo(0,%d);1" % y})
+                            await asyncio.sleep(1.6)
                     raw = await call(s, "cloak_evaluate", {"page_id": pid, "expression": STOCK_JS})
                     rows = json.loads(json.loads(raw).get("result", "[]"))
                 except Exception as e:
