@@ -98,6 +98,12 @@ QUERIES_CHAR = [
     "(elden ring OR dark souls) character art",
     "(hollow knight OR hades) character art",
     "(vinland saga OR attack on titan) character art",
+    # female-forward (owner: beautiful females, never NSFW)
+    "anime girl fanart aesthetic",
+    "(genshin impact OR re zero) solo girl art",
+    "(jujutsu kaisen OR chainsaw man) girl art aesthetic",
+    "(frieren OR spy x family) girl fanart",
+    "anime female character art aesthetic",
 ]
 QUERIES = QUERIES_BROAD  # backwards compat
 

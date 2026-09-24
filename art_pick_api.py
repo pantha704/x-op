@@ -46,6 +46,38 @@ SERIES = [
     ("solo_leveling", "Solo Leveling"),
     ("dandadan", "Dandadan"),
     ("neon_genesis_evangelion", "Evangelion"),
+    # widened: any anime/game, beautiful females (owner 2026-09-24)
+    ("honkai:_star_rail", "Honkai: Star Rail"),
+    ("genshin_impact", "Genshin Impact"),
+    ("zenless_zone_zero", "Zenless Zone Zero"),
+    ("wuthering_waves", "Wuthering Waves"),
+    ("arknights", "Arknights"),
+    ("stellar_blade", "Stellar Blade"),
+    ("final_fantasy_vii", "Final Fantasy VII"),
+    ("league_of_legends", "League of Legends"),
+    ("overwatch", "Overwatch"),
+    ("fire_emblem", "Fire Emblem"),
+    ("xenoblade_chronicles", "Xenoblade"),
+    ("violet_evergarden", "Violet Evergarden"),
+    ("kimi_no_na_wa", "Your Name"),
+    ("koe_no_katachi", "A Silent Voice"),
+    ("oshi_no_ko", "Oshi no Ko"),
+    ("bocchi_the_rock", "Bocchi the Rock"),
+    ("komi-san_wa_komyushou_desu", "Komi Can't Communicate"),
+    ("overlord", "Overlord"),
+    ("konosuba", "Konosuba"),
+    ("mushoku_tensei", "Mushoku Tensei"),
+    ("tensei_shitara_slime_datta_ken", "Slime Isekai"),
+    ("cyberpunk:_edgerunners", "Cyberpunk: Edgerunners"),
+    ("naruto", "Naruto"),
+    ("dragon_ball", "Dragon Ball"),
+    ("boku_no_hero_academia", "My Hero Academia"),
+    ("sailor_moon", "Sailor Moon"),
+    ("cardcaptor_sakura", "Cardcaptor Sakura"),
+    ("tokyo_ghoul", "Tokyo Ghoul"),
+    ("kimi_ga_nozomu_eien", "Your Lie in April"),
+    ("horimiya", "Horimiya"),
+    ("k-on!", "K-On!"),
 ]
 
 CHAR_MAP = [
@@ -144,13 +176,19 @@ def main():
     for tag, series in SERIES:
         if n >= limit:
             break
-        try:
-            url = ("https://safebooru.org/index.php?page=dapi&s=post&q=index" +
-                   "&tags=" + urllib.parse.quote(tag + " rating:safe") + "&limit=80")
-            xml = fetch(url)
-            posts = ET.fromstring(xml).findall("post")
-        except Exception as e:
-            print("skip", tag, str(e)[:60], file=sys.stderr)
+        posts = []
+        for extra in (" 1girl solo", " 1girl", ""):
+            try:
+                url = ("https://safebooru.org/index.php?page=dapi&s=post&q=index" +
+                       "&tags=" + urllib.parse.quote(tag + " rating:safe" + extra) + "&limit=80")
+                xml = fetch(url)
+                posts = ET.fromstring(xml).findall("post")
+                if len(posts) >= 20:
+                    break
+            except Exception as e:
+                print("skip", tag, extra, str(e)[:50], file=sys.stderr)
+                continue
+        if not posts:
             continue
         rows = []
         for p in posts:
@@ -161,6 +199,10 @@ def main():
                 if w < 800 or h < 600 or w > 6000:
                     continue
                 if BANNED_TAGS.search(tg):
+                    continue
+                if "1boy" in tg and "1girl" not in tg:
+                    continue  # female-forward
+                if "cosplay" in tg or "photo" in tg or "realistic" in tg:
                     continue
                 rows.append({"score": int(p.get("score") or 0), "url": p.get("file_url"), "tags": tg,
                              "w": w, "h": h, "id": p.get("id")})
