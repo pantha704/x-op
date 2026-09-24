@@ -23,16 +23,22 @@ from mcp.client.streamable_http import streamable_http_client
 URL = "http://127.0.0.1:8932/mcp"
 
 # queries in the account's universe: art, scenery, aesthetic - anime / games / general digital
+# Genre + persona locked (owner directive 2026-09-24): anime / games / tech-AI,
+# flavoured as HER - genshin, elden ring, rdr2, rezero/aot/vinland saga, cozy or
+# feral, cyberpunk/edgerunners, retro-tech. No generic nature, no off-lane art.
 QUERIES = [
-    "anime art scenery",
-    "(digital art OR concept art) landscape",
-    "(pixel art OR retro art) city",
-    "genshin art scenery",
-    "cozy art illustration",
-    "cyberpunk art cityscape",
-    "my art painting landscape",
-    "original illustration art scenery",
-    "fantasy art environment",
+    "anime scenery art",
+    "studio ghibli scenery art",
+    "(elden ring OR dark souls) scenery art",
+    "(genshin impact) landscape scenery",
+    "cyberpunk neon city art",
+    "(re zero OR attack on titan OR vinland saga) scenery art",
+    "pixel art cityscape",
+    "cozy room illustration art",
+    "synthwave retrowave art",
+    "dark fantasy landscape art",
+    "game environment concept art",
+    "retro computer aesthetic art",
 ]
 
 READ_JS = r"""JSON.stringify((() => {
@@ -149,12 +155,14 @@ async def main():
                     })
             # ---- additional pools: unsplash (free photography) + pinterest (aesthetic) ----
             STOCK = [
-                ("unsplash", "https://unsplash.com/s/photos/serene-landscape"),
-                ("unsplash", "https://unsplash.com/s/photos/cozy-forest-cabin"),
                 ("unsplash", "https://unsplash.com/s/photos/cyberpunk-city-night"),
-                ("pinterest", "https://www.pinterest.com/search/pins/?q=aesthetic%20scenery%20art"),
+                ("unsplash", "https://unsplash.com/s/photos/neon-japan-street-night"),
+                ("unsplash", "https://unsplash.com/s/photos/cozy-cabin-rain"),
+                ("unsplash", "https://unsplash.com/s/photos/nordic-mountains-fog"),
                 ("pinterest", "https://www.pinterest.com/search/pins/?q=anime%20scenery%20art"),
                 ("pinterest", "https://www.pinterest.com/search/pins/?q=cozy%20fantasy%20art"),
+                ("pinterest", "https://www.pinterest.com/search/pins/?q=cyberpunk%20art"),
+                ("pinterest", "https://www.pinterest.com/search/pins/?q=elden%20ring%20art"),
             ]
             STOCK_JS = r"""JSON.stringify((() => {
   const out = [];
