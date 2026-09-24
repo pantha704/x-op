@@ -7,10 +7,10 @@
 - Genshin: **7.1 "A Rekviem for the Underworld"** live since Sept 23 (Snezhnaya arc). Banners: Vesna + Vodyanitsa. **6th anniversary Sept 28** (free 5★ selectors).
 - GTA VI: pre-orders open, launches **Nov 19, 2026** (PS5/Xbox; no PC date).
 - Valorant: **Champions 2026 Shanghai runs Sept 24–Oct 18** — starts today.
-- Cyberpunk: **Edgerunners 2 premieres on Netflix in October 2026**.
+- Cyberpunk: **Edgerunners 2 premieres Oct 20 on Netflix**.
 - Elden Ring: Tarnished Edition dropped on Switch 2 Aug 28; Nightreign DLC is out.
-- Minecraft: current drop is **Wilderness Bound** (Sept 15). RE Requiem: out since Feb 27, 8M+ sold.
-- LoL: T1 = reigning champs (3-peat); Worlds 2026 in the US this fall.
+- Minecraft: current drop is **Wilderness Bound** (Sept 15). RE Requiem: out since Feb 27, 8M+ sold; **'Last Days' story DLC reportedly fall 2026** (insiders say Ada Wong + Alyssa + Mercenaries).
+- LoL: T1 = reigning champs (3-peat); Worlds 2026 Oct 15–Nov 14 (Play-Ins LA, Swiss+knockouts Allen TX, Final Nov 14 Barclays Brooklyn).
 
 ## GENSHIN IMPACT (the daily game — deepest section)
 
@@ -94,14 +94,14 @@
 
 ### Status 2026
 - **82M+ copies sold** (Take-Two, Feb 2026); best-selling US title of the past 7 years by dollar sales.
-- Still **no official current-gen/60fps patch** — insiders claim one is finished but Rockstar is holding it behind GTA VI marketing (reports June–Aug 2026).
+- Still **no official current-gen/60fps patch** — insiders claim one is finished but Rockstar is holding it behind GTA VI marketing (reports June–Aug 2026). Sept 2026 patch 1.32 (first in ~2 yrs) added FSR 2.2 + HDR10 — still no 60fps.
 - Red Dead Online: content dead since ~2022; "RDO deserves better" is evergreen.
 
 ## ELDEN RING (deep)
 
 ### The games
 - Elden Ring (Feb 2022) · **Shadow of the Erdtree** DLC (June 21, 2024) · **Nightreign** co-op roguelike spin-off (May 30, 2025; 5M+ sold) · Nightreign DLC **"The Forsaken Hollows"** (Dec 4, 2025 — 2 Nightfarers, 2 bosses, 1 Shifting Earth).
-- **Tarnished Edition** (base + DLC) hit Nintendo Switch 2 on **Aug 28, 2026**. FromSoft's next: **The Duskbloods** (Switch 2 exclusive, PvPvE, Miyazaki — still slated 2026).
+- **Tarnished Edition** (base + DLC) hit Nintendo Switch 2 on **Aug 28, 2026**. FromSoft's next: **The Duskbloods** (Switch 2 exclusive, PvPvE, Miyazaki — still slated 2026; network test ran Aug 21, still no firm date).
 
 ### Malenia & Radahn (the eternal discourse)
 - **Malenia, Blade of Miquella**: "I am Malenia, Blade of Miquella. And I have never known defeat." Waterfowl Dance; she heals when she hits you; phase 2 = Goddess of Rot. Hardest-boss meme royalty.
@@ -156,7 +156,7 @@
 
 ### Edgerunners
 - Netflix anime (Sept 2022, studio TRIGGER): **David Martinez, Lucy, Rebecca** (fan favorite), Maine, Kiwi; Adam Smasher kills Rebecca; "I Really Want to Stay at Your House" (Rosa Walton) = instant tears; "Let You Down" = ending song.
-- **Edgerunners 2 premieres on Netflix in October 2026** (trailer Aug 21, 2026; new cast, TRIGGER again).
+- **Edgerunners 2 premieres Oct 20 on Netflix** (trailer Aug 21; new cast, TRIGGER again).
 
 ### Arguments
 - The game's redemption arc · Judy vs Panam · anime better than the game? · lifepath choice · which ending is canon.
@@ -179,6 +179,7 @@
 ## GTA VI (light — status + hype)
 - Launches **Nov 19, 2026** (Thursday) on PS5 / Xbox Series X|S. Pre-orders opened **June 25, 2026**; **$79.99**; pre-load Nov 12; pre-order bonus = "Vintage Vice City Pack." **PC version still unannounced** — the biggest sore point.
 - Two delays to get here (2025 → May 26, 2026 → Nov 19, 2026); Rockstar has re-confirmed the date since.
+- Zelnick admitted the game is ~18 months behind its original internal target — and still swears Nov 19 holds.
 - Setting: Leonida (Vice City). Protagonists: **Lucia Caminos + Jason Duval** (Bonnie & Clyde). Trailer 1 = Dec 2023, Trailer 2 = May 2025, cover art = June 2026.
 - Take-Two's FY27 outlook ($8–8.2B) rides on it.
 - Memes: "Lucia's ankle monitor" · "Jason looks like a default Fortnite skin" · delay jokes ("see you in 2027") · "PC players in shambles" · Florida Joker · "will my rig run it".

@@ -8,26 +8,26 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 - Never post a "season announced" claim without checking the status line here first — half of "S3 confirmed" posts are fake.
 - A real fan references arcs by name (Arc 6, Farmland arc, Culling Game, Elbaph) and knows what happened LAST, not just the famous scene.
 
-**2026 status snapshot (verified Sept 2026):**
+**2026 status snapshot (verified Sept 24, 2026):**
 
 | Show | State as of Sept 2026 |
 |---|---|
-| Re:Zero | S4 airing now — began Apr 8, 2026. Cour 1 "Loss Arc" (Apr–Jun), Cour 2 "Recapture Arc" from Aug 12. Adapts Arc 6 (Pleiades Watchtower). OP "Recollect" (Konomi Suzuki × Ashnikko), ED "Ender Ember" (MYTH & ROID × TK). |
+| Re:Zero | S4 airing now — began Apr 8, 2026. Cour 1 "Loss Arc" (Apr–Jun), Cour 2 "Recapture Arc" from Aug 12. Adapts Arc 6 (Pleiades Watchtower). OP "Recollect" (Konomi Suzuki × Ashnikko), ED "Ender Ember" (MYTH & ROID × TK). Finale Ep 19 Sept 30 (45-min extended). |
 | Death Note | No new anime. 20th-anniversary year: new stage musical at London's Barbican (Jul 30–Sep 12, 2026; back in 2027). Duffer Brothers' Netflix live-action stalled. |
 | Attack on Titan | Anime ended 2023. "THE LAST ATTACK" (Final Chapters compilation + new "School Castes" AU post-credits) re-released in US/Canada cinemas May 18, 2026, one night, 4K. Isayama has said he regrets the ending. No new anime. |
 | Vinland Saga | Manga ENDED July 25, 2025 (ch. 220). Anime S3 NOT announced — Yukimura debunked the rumors himself (Jan 2026). S1 2019, S2 2023 only. |
 | Jujutsu Kaisen | S3 "The Culling Game Part 1" aired Winter 2026 (from Jan 8, 12 eps). S4 "Culling Game Part 2" teaser June 2026. Manga ended Sept 2024; spinoff "Jujutsu Kaisen ≡ (Modulo)" ran Sept 2025–Mar 2026. |
-| One Piece | Manga in Elbaph arc — Luffy & Loki vs Imu climax (~ch. 1193). TV anime Elbaph arc since Apr 5, 2026. Live-action S2 "Into the Grand Line" on Netflix Mar 10, 2026. Wit Studio remake "THE ONE PIECE" Feb 2027. |
-| Demon Slayer | "Infinity Castle Part 1" (Sept 2025) = highest-grossing anime film ever ($793M+ WW, ¥40B+ Japan). Streaming/Netflix Jul 28, 2026. Part 2 earliest 2027 (September expected). |
+| One Piece | Manga in Elbaph arc — Luffy & Loki vs Imu climax (~ch. 1193). TV anime Elbaph arc since Apr 5, 2026. Live-action S2 "Into the Grand Line" on Netflix Mar 10, 2026. Wit Studio remake "THE ONE PIECE" Feb 2027. Next film "God Valley" summer 2027 (reportedly first film tied to canon story). |
+| Demon Slayer | "Infinity Castle Part 1" (Sept 2025) = highest-grossing anime film ever ($793M+ WW, ¥40B+ Japan). Streaming/Netflix Jul 28, 2026. Part 2 unconfirmed; Sept 2027 rumored (untitled Crunchyroll/Sony listing). |
 | Chainsaw Man | Reze Arc movie → Crunchyroll Feb 10, 2026. Next: "Assassins Arc" anime (International Assassins), 2027, MAPPA, dir. Tatsuya Yoshihara. |
-| Solo Leveling | Movie "Solo Leveling: Beyond the System" in production (announced Anime Expo, Jul 3, 2026; post–Jeju Island arcs). S3 window 2027–2028. Won Best Animation + Best Action at Crunchyroll Anime Awards 2026. |
+| Solo Leveling | Movie "Solo Leveling: Beyond the System" in production (announced Anime Expo, Jul 3, 2026; post–Jeju Island arcs). S3 window 2027–2028. A-1 returns; dir. Tao Tajima. Won Best Animation + Best Action at Crunchyroll Anime Awards 2026. |
 | Frieren | S2 aired Jan 16 – Mar 27, 2026 (10 eps). S3 "Golden Land Arc" announced for October 2027. Manga ongoing. |
 
 ---
 
 ## Re:Zero − Starting Life in Another World (Re:Zero kara Hajimeru Isekai Seikatsu)
 
-**Status 2026:** S4 airing since April 8, 2026 (White Fox, dir. Masahiro Shinohara). Cour 1 "Loss Arc" (11 eps, Apr 8–Jun 17), Cour 2 "Recapture Arc" (8 eps, from Aug 12). Adapts LN Arc 6 → the Pleiades Watchtower. S3 (2024–25) = Priestella / Arc 5.
+**Status 2026:** S4 airing since April 8, 2026 (White Fox, dir. Masahiro Shinohara). Cour 1 "Loss Arc" (11 eps, Apr 8–Jun 17), Cour 2 "Recapture Arc" (8 eps, from Aug 12). Adapts LN Arc 6 → the Pleiades Watchtower. S3 (2024–25) = Priestella / Arc 5. Finale Ep 19 lands Sept 30 (45-min extended); Ep 18 "Ram" (Sept 23) = Ram vs Lye, Emilia vs Volcanica.
 
 **Cast (exact spellings):** Natsuki Subaru, Emilia, Rem, Ram, Beatrice, Puck, Roswaal L Mathers, Otto Suwen, Garfiel Tinsel, Frederica Baumann, Petra Leyte, Julius Juukulius, Felix Argyle, Crusch Karsten, Anastasia Hoshin, Priscilla Barielle, Felt, Reinhard van Astrea, Wilhelm van Astrea, Theresia van Astrea, Echidna, Satella, Petelgeuse Romanée-Conti, Regulus Corneas, Sirius Romanée-Conti, Capella Emerada Lugunica, Ley Batenkaitos, Roy Alphard, Louis Arneb, Meili Portroute, Shaula, Al (Aldebaran).
 - "Barusu" = Ram's nickname for Subaru. "Foxidna" = Subaru's S4 nickname for the Echidna-copy fox spirit possessing Anastasia.
@@ -224,7 +224,7 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 
 ## Jujutsu Kaisen (lighter coverage)
 
-**Status 2026:** S3 "The Culling Game Part 1" aired Winter 2026 (from Jan 8, 12 eps, MAPPA). S4 "The Culling Game Part 2" got its teaser June 19, 2026. Manga ended Sept 2024 (ch. 271). Spinoff "Jujutsu Kaisen ≡ (Modulo)" (Gege Akutami × Yuji Iwasaki) ran Sept 2025 – Mar 2026 — "jujutsu sorcerers and aliens".
+**Status 2026:** S3 "The Culling Game Part 1" aired Winter 2026 (from Jan 8, 12 eps, MAPPA). S4 "The Culling Game Part 2" got its teaser June 19, 2026. No release window yet; new director Takeru Sato. Manga ended Sept 2024 (ch. 271). Spinoff "Jujutsu Kaisen ≡ (Modulo)" (Gege Akutami × Yuji Iwasaki) ran Sept 2025 – Mar 2026 — "jujutsu sorcerers and aliens".
 
 **Cast:** Yuji Itadori, Megumi Fushiguro, Nobara Kugisaki, Satoru Gojo, Ryomen Sukuna, Maki Zen'in, Toge Inumaki, Panda, Yuta Okkotsu, Suguru Geto, Kenjaku, Toji Fushiguro, Kento Nanami, Mahito, Jogo, Hanami, Choso, Naoya Zen'in, Hiromi Higuruma, Hajime Kashimo, Kinji Hakari, Yuki Tsukumo, Aoi Todo, Kasumi Miwa, Kokichi Muta (Mechamaru), Shoko Ieiri, Uraume, Hana Kurusu.
 
@@ -278,7 +278,7 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 
 ## Chainsaw Man (lighter coverage)
 
-**Status 2026:** "Chainsaw Man – The Movie: Reze Arc" (Sept 2025) streamed on Crunchyroll Feb 10, 2026. Next: "Chainsaw Man: Assassins Arc" anime (the International Assassins arc) — announced at Jump Festa, second teaser June 19, 2026, 2027 release, MAPPA, directed by Tatsuya Yoshihara. Part 2 of the manga is ongoing (Asa Mitaka/Yoru, the Chainsaw Man Church, the Aging Devil, Yoru's war escalating).
+**Status 2026:** "Chainsaw Man – The Movie: Reze Arc" (Sept 2025) streamed on Crunchyroll Feb 10, 2026. Next: "Chainsaw Man: Assassins Arc" anime (the International Assassins arc) — announced at Jump Festa, second teaser June 19, 2026, late 2027, MAPPA, directed by Tatsuya Yoshihara. Part 2 of the manga is ongoing (Asa Mitaka/Yoru, the Chainsaw Man Church, the Aging Devil, Yoru's war escalating).
 
 **Cast:** Denji, Pochita, Makima, Aki Hayakawa, Power, Himeno, Kishibe, Kobeni Higashiyama, Angel Devil, Reze, Quanxi, Santa Claus, Darkness Devil, Asa Mitaka, Yoru (War Devil), Nayuta, Fami, Hirofumi Yoshida, Katana Man, Beam.
 
@@ -296,7 +296,7 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 
 ## Solo Leveling (lighter coverage)
 
-**Status 2026:** S2 "Arise from the Shadow" aired Jan–Mar 2025; won Best Animation + Best Action at the Crunchyroll Anime Awards 2026. Next: the theatrical movie "Solo Leveling: Beyond the System" — announced at Anime Expo (Crunchyroll Showcase) July 3, 2026, in production, adapting the arcs after Jeju Island. S3 release window: 2027–2028 (per D&C Media's financial report, June 2026). Manhwa ended 2021 (179 ch); sequel webtoon "Solo Leveling: Ragnarok" follows Jinwoo's son.
+**Status 2026:** S2 "Arise from the Shadow" aired Jan–Mar 2025; won Best Animation + Best Action at the Crunchyroll Anime Awards 2026. Next: the theatrical movie "Solo Leveling: Beyond the System" — announced at Anime Expo (Crunchyroll Showcase) July 3, 2026, in production, adapting the arcs after Jeju Island. A-1 returns; dir. Tao Tajima. S3 release window: 2027–2028 (per D&C Media's financial report, June 2026). Manhwa ended 2021 (179 ch); sequel webtoon "Solo Leveling: Ragnarok" follows Jinwoo's son.
 
 **Cast:** Sung Jinwoo, Cha Hae-In, Yoo Jinho, Choi Jong-In, Baek Yoonho, Go Gunhee, Song Chi-Yul, Hwang Dongsoo, Goto Ryuji, Thomas Andre, Liu Zhigang, Beru, Igris, Iron, Tank, Tusk, Kaisel, Bellion, Ashborn.
 
@@ -314,7 +314,7 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 
 ## Frieren: Beyond Journey's End (Sōsō no Frieren) (lighter coverage)
 
-**Status 2026:** S2 aired Jan 16 – Mar 27, 2026 (10 episodes — the fandom grumbled about the length). S3 "Golden Land Arc" announced Mar 27, 2026 for October 2027, same main staff, in production. Manga ongoing (Kanehito Yamada × Tsukasa Abe). S1 swept award season (Anime of the Year era).
+**Status 2026:** S2 aired Jan 16 – Mar 27, 2026 (10 episodes — the fandom grumbled about the length). S3 "Golden Land Arc" announced Mar 27, 2026 for October 2027, same main staff, in production; staff locked at Anime Expo Jul 2026 (Kitagawa directs). Manga ongoing (Kanehito Yamada × Tsukasa Abe). S1 swept award season (Anime of the Year era).
 
 **Cast:** Frieren, Fern, Stark, Himmel, Heiter, Eisen, Aura, Lugner, Linie, Qual, Übel, Land, Wirbel, Serie, Sense, Denken, Macht, Solitär, Flamme.
 
@@ -330,4 +330,4 @@ Purpose: so anime posts/replies sound native. Exact spellings, verbatim quotes, 
 
 ---
 
-*Digest compiled Sept 2026. Status lines verified via web search; update the snapshot table when new seasons are announced.*
+*Digest compiled Sept 2026; status re-verified Sept 24, 2026. Update the snapshot table when new seasons are announced.*

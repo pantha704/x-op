@@ -212,16 +212,12 @@ async def main():
                     await call(s, "cloak_navigate", {"page_id": pid, "url": "https://x.com/your_handle"})
                     await asyncio.sleep(5)
                     rows = await ev(s, pid, PROFILE_JS)
-                    if isinstance(rows, list):
-                        used = set()
-                        # newest-first; match by text prefix (our line is the start of the post text)
-                        for f in fired:
-                            key = f["text"][:48]
-                            for r in rows:
-                                if r["url"] and r["url"] not in used and r["text"].startswith(key[:40]):
-                                    f["quote_url"] = r["url"]
-                                    used.add(r["url"])
-                                    break
+                    if isinstance(rows, list) and rows:
+                        # deterministic: the wave posts sequentially, so the newest len(fired)
+                        # profile posts are exactly the wave's posts, newest-first = reversed fire order
+                        recent = [r for r in rows if r.get("url")][:len(fired)]
+                        for i, r in enumerate(recent):
+                            fired[len(fired) - 1 - i]["quote_url"] = r["url"]
                 except Exception as e:
                     print("permalink capture failed:", str(e)[:100])
                 # rewrite log with quote_urls
