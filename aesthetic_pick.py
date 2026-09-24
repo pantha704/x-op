@@ -26,7 +26,7 @@ URL = "http://127.0.0.1:8932/mcp"
 # Genre + persona locked (owner directive 2026-09-24): anime / games / tech-AI,
 # flavoured as HER - genshin, elden ring, rdr2, rezero/aot/vinland saga, cozy or
 # feral, cyberpunk/edgerunners, retro-tech. No generic nature, no off-lane art.
-QUERIES = [
+QUERIES_BROAD = [
     # persona core (her canon)
     "anime scenery art",
     "studio ghibli scenery art",
@@ -79,6 +79,27 @@ QUERIES = [
     "(hotline miami OR katana zero) art",
     "(celeste OR hollow knight) art",
 ]
+
+# character-art lanes (priority - owner likes beautiful non-sexual character pieces)
+QUERIES_CHAR = [
+    "anime character fanart aesthetic",
+    "(re zero OR ram OR rem) character fanart",
+    "(genshin impact) character fanart",
+    "(kaguya sama OR oshi no ko) character art",
+    "(jujutsu kaisen) character fanart",
+    "(demon slayer) character fanart",
+    "(chainsaw man) character fanart",
+    "(solo leveling OR frieren) character fanart",
+    "(one piece OR bleach) character fanart",
+    "(spy x family OR dandadan) character fanart",
+    "(berserk OR monster) manga character art",
+    "(steins gate OR evangelion) character art",
+    "(nier OR persona 5) game character art",
+    "(elden ring OR dark souls) character art",
+    "(hollow knight OR hades) character art",
+    "(vinland saga OR attack on titan) character art",
+]
+QUERIES = QUERIES_BROAD  # backwards compat
 
 READ_JS = r"""JSON.stringify((() => {
   const out = [];
@@ -152,7 +173,7 @@ async def main():
             pid = np.get("page_id") or np.get("id")
             await asyncio.sleep(3)
             import random as _r
-            _run_qs = _r.sample(QUERIES, min(16, len(QUERIES)))
+            _run_qs = list(QUERIES_CHAR) + _r.sample(QUERIES_BROAD, 6)
             for q in _run_qs:
                 try:
                     url = "https://x.com/search?q=" + q.replace(' ', '%20').replace('(', '%28').replace(')', '%29').replace('"', '%22') + "&src=typed_query&f=top"
