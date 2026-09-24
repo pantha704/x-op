@@ -78,15 +78,86 @@ PROFILE_JS = r"""JSON.stringify((() => {
 })())"""
 
 
+async def attach_tag(s, pid, handle):
+    """Tag @handle inside the attached image via the composer's Tag people flow.
+    Returns tagged | tagged-unverified | untaggable | notfound | no-ui | failed."""
+    clicked = await ev(s, pid, r"""JSON.stringify((() => {
+  const cands = [...document.querySelectorAll('[aria-label="Tag people"]')];
+  for (const el of cands) { const b = el.closest('a') || el.closest('button') || el; if (b && b.offsetParent !== null) { b.click(); return {ok:true}; } }
+  return {ok:false};
+})())""")
+    if not (isinstance(clicked, dict) and clicked.get("ok")):
+        return "no-ui"
+    await asyncio.sleep(2.5)
+    typed = await ev(s, pid, r"""JSON.stringify((() => {
+  const inp = document.querySelector('input[data-testid="searchPeople"]');
+  if (!inp) return {ok:false, why:'no searchPeople'};
+  inp.focus();
+  const setter = Object.getOwnPropertyDescriptor(window.HTMLInputElement.prototype, 'value').set;
+  setter.call(inp, __H__);
+  inp.dispatchEvent(new Event('input', {bubbles:true}));
+  return {ok:true};
+})())""".replace("__H__", json.dumps(handle)))
+    if not (isinstance(typed, dict) and typed.get("ok")):
+        return "no-ui"
+    await asyncio.sleep(3.5)
+    pic = await ev(s, pid, r"""JSON.stringify((() => {
+  const want = ('@' + __H__).toLowerCase();
+  const rows = [...document.querySelectorAll('[data-testid="typeaheadResult"]')];
+  for (const r of rows) {
+    const tx = (r.innerText || '').toLowerCase();
+    if (tx.includes(want)) {
+      if (tx.includes("can't be tagged") || tx.includes("cannot be tagged")) return {status:'untaggable'};
+      const btn = r.querySelector('[data-testid="TypeaheadUser"]') || r;
+      btn.click();
+      return {status:'clicked'};
+    }
+  }
+  return {status:'notfound', n: rows.length};
+})())""".replace("__H__", json.dumps(handle)))
+    st = pic.get("status") if isinstance(pic, dict) else "failed"
+    if st != "clicked":
+        await ev(s, pid, r"""JSON.stringify((() => { const b=[...document.querySelectorAll('button, [role="button"], [role="link"]')].find(x=>/close/i.test(x.getAttribute('aria-label')||'')); if(b) b.click(); return {ok:true}; })())""")
+        return st
+    await asyncio.sleep(1.8)
+    done = await ev(s, pid, r"""JSON.stringify((() => {
+  const btns = [...document.querySelectorAll('button')].filter(b => b.offsetParent !== null && (b.innerText||'').trim() === 'Done');
+  if (btns.length) { btns[btns.length-1].click(); return {ok:true}; }
+  return {ok:false};
+})())""")
+    if not (isinstance(done, dict) and done.get("ok")):
+        return "failed"
+    await asyncio.sleep(2.0)
+    ver = await ev(s, pid, r"""JSON.stringify((() => {
+  const d = document.querySelector('[role="dialog"]') || document;
+  return { has: (d.innerText || '').toLowerCase().includes(__H__) };
+})())""".replace("__H__", json.dumps("@" + handle.lower())))
+    return "tagged" if (isinstance(ver, dict) and ver.get("has")) else "tagged-unverified"
+
+
 async def main():
     argv = sys.argv[1:]
     dry = "--dry" in argv
-    args = [a for a in argv if a != "--dry"]
-    if not args:
-        print("usage: aesthetic_publish.py <image_path> [\"<text>\"] [--dry]")
+    tag_handle = ""
+    fallback_text = ""
+    pos = []
+    i = 0
+    while i < len(argv):
+        a = argv[i]
+        if a == "--dry":
+            i += 1
+        elif a == "--tag" and i + 1 < len(argv):
+            tag_handle = argv[i + 1].lstrip("@"); i += 2
+        elif a == "--fallback-text" and i + 1 < len(argv):
+            fallback_text = argv[i + 1]; i += 2
+        else:
+            pos.append(a); i += 1
+    if not pos:
+        print("usage: aesthetic_publish.py <image_path> [\"<text>\"] [--tag @handle] [--fallback-text '<text>'] [--dry]")
         sys.exit(2)
-    img_path = args[0]
-    text = args[1] if len(args) > 1 else ""
+    img_path = pos[0]
+    text = pos[1] if len(pos) > 1 else ""
+    tag_status = "none"
     if not os.path.exists(img_path):
         print("ERR: image not found", img_path)
         sys.exit(2)
@@ -146,6 +217,15 @@ async def main():
                 # give it a last chance even with progress indicator
                 await asyncio.sleep(6)
 
+            if tag_handle:
+                tag_status = await attach_tag(s, pid, tag_handle)
+                print("tag:", tag_status)
+                if tag_status in ("untaggable", "notfound", "no-ui", "failed") and fallback_text and not text:
+                    text = fallback_text
+                    t2 = await ev(s, pid, TYPE_JS.replace("__TEXT__", json.dumps(text)))
+                    print("fallback text:", json.dumps(t2)[:90])
+                    await asyncio.sleep(1.0)
+
             if dry:
                 print("DRY - preview attached, not posting")
                 await call(s, "cloak_close_page", {"page_id": pid})
@@ -173,7 +253,9 @@ async def main():
             if outcome == "hit":
                 try:
                     await call(s, "cloak_navigate", {"page_id": pid, "url": "https://x.com/your_handle"})
-                    await asyncio.sleep(5)
+                    await asyncio.sleep(4)
+                    await call(s, "cloak_navigate", {"page_id": pid, "url": "https://x.com/your_handle"})  # hard reload: profile is stale right after posting
+                    await asyncio.sleep(7)
                     rows = await ev(s, pid, PROFILE_JS)
                     if isinstance(rows, list) and rows:
                         permalink = rows[0].get("url")
@@ -186,7 +268,8 @@ async def main():
 
     os.makedirs("logs", exist_ok=True)
     entry = {"ts": time.strftime("%H:%M:%S"), "date": time.strftime("%Y-%m-%d"), "type": "aesthetic",
-             "image": img_path, "image_bytes": sz, "text": text, "outcome": outcome, "permalink": permalink}
+             "image": img_path, "image_bytes": sz, "text": text, "outcome": outcome, "permalink": permalink,
+             "tag": tag_handle, "tag_status": tag_status}
     with open("logs/aesthetic-%s.jsonl" % time.strftime("%Y%m%d"), "a") as fh:
         fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
     print("OUTCOME:", outcome, "| permalink:", permalink)

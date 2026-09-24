@@ -147,12 +147,53 @@ async def main():
                         "likes": likes,
                         "text": (r.get("text") or "").strip(),
                     })
+            # ---- additional pools: unsplash (free photography) + pinterest (aesthetic) ----
+            STOCK = [
+                ("unsplash", "https://unsplash.com/s/photos/serene-landscape"),
+                ("unsplash", "https://unsplash.com/s/photos/cozy-forest-cabin"),
+                ("unsplash", "https://unsplash.com/s/photos/cyberpunk-city-night"),
+                ("pinterest", "https://www.pinterest.com/search/pins/?q=aesthetic%20scenery%20art"),
+                ("pinterest", "https://www.pinterest.com/search/pins/?q=anime%20scenery%20art"),
+                ("pinterest", "https://www.pinterest.com/search/pins/?q=cozy%20fantasy%20art"),
+            ]
+            STOCK_JS = r"""JSON.stringify((() => {
+  const out = [];
+  [...document.querySelectorAll('img')].forEach(i => {
+    const s = i.src || '';
+    if (i.width < 150 || i.height < 150) return;
+    if (s.includes('images.unsplash.com')) out.push({pool:'unsplash', img:s.split('?')[0] + '?fm=jpg&q=80&w=1600'});
+    else if (s.includes('i.pinimg.com')) out.push({pool:'pinterest', img:s.replace('/236x/','/736x/').replace('/474x/','/736x/')});
+  });
+  return out;
+})())"""
+            for pool, url in STOCK:
+                try:
+                    await call(s, "cloak_navigate", {"page_id": pid, "url": url})
+                    await asyncio.sleep(5)
+                    raw = await call(s, "cloak_evaluate", {"page_id": pid, "expression": STOCK_JS})
+                    rows = json.loads(json.loads(raw).get("result", "[]"))
+                except Exception as e:
+                    print("stock fail:", pool, str(e)[:60], file=sys.stderr)
+                    continue
+                for x in rows:
+                    key = x["img"]
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    out.append({"tweet_url": "", "author": "", "credit": "", "img": key,
+                                "likes": 0, "text": "", "source": pool})
             try:
                 await call(s, "cloak_close_page", {"page_id": pid})
             except Exception:
                 pass
-    out.sort(key=lambda x: -x["likes"])
-    print(json.dumps(out[:lim], indent=1))
+    # X candidates ranked by likes; stock candidates fill the tail (worker may pick from either)
+    for r in out:
+        r.setdefault("source", "x")
+    xr = [r for r in out if r.get("source") == "x"]
+    sr = [r for r in out if r.get("source") != "x"]
+    xr.sort(key=lambda v: -v["likes"])
+    final = xr[:max(3, lim)] + sr[:6]
+    print(json.dumps(final, indent=1))
 
 
 if __name__ == "__main__":
