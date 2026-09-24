@@ -45,6 +45,16 @@ for i, e in enumerate(entries):
         consec = 0
         print(f"[{i+1}/{len(entries)}] hit  {e['image']} {e.get('tag','')} src={e.get('source','')}", flush=True)
     else:
+        low = out.lower()
+        if "post button stuck" in low:
+            print(f"STOPPED at [{i+1}/{len(entries)}]: X throttle (post button stuck). Remaining items stay queued.", flush=True)
+            with open(man, "w") as fh:
+                for x in entries[i:]:
+                    fh.write(json.dumps(x) + "\n")
+            break
+        if "screen blocked" in low:
+            print(f"[{i+1}/{len(entries)}] skip (NSFW gate) {e['image']}", flush=True)
+            continue
         fail += 1
         consec += 1
         tail = out.strip().splitlines()[-1] if out.strip() else "no output"
