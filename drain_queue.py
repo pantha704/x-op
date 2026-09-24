@@ -16,11 +16,14 @@ import sys
 import time
 
 os.chdir("/home/ubuntu/x-op")
-man = "worker/final10-manifest.jsonl"
+MANIFESTS = ["worker/final10-manifest.jsonl", "worker/char-batch.jsonl"]
 if not os.path.exists(man):
     raise SystemExit(0)
 
-entries = [json.loads(l) for l in open(man) if l.strip()]
+entries = []
+for _m in MANIFESTS:
+    if os.path.exists(_m):
+        entries += [json.loads(l) for l in open(_m) if l.strip()]
 if not entries:
     raise SystemExit(0)
 
@@ -56,9 +59,21 @@ for i, e in enumerate(entries):
     if remaining and remaining[-1] is e:
         time.sleep(0)  # no-op; pacing handled by publish gaps
 
-with open(man, "w") as fh:
+files = {id(json.loads(l)): m for m in MANIFESTS for l in open(m) if l.strip()}
+by_img = {e["image"]: e for e in remaining}
+for m in MANIFESTS:
+    if not os.path.exists(m):
+        continue
+    with open(m, "w") as fh:
+        for l in [json.dumps(x) + "\n" for x in remaining]:
+            pass
+# rewrite: put everything into the first manifest, empty the rest
+with open(MANIFESTS[0], "w") as fh:
     for e in remaining:
         fh.write(json.dumps(e) + "\n")
+for m in MANIFESTS[1:]:
+    if os.path.exists(m):
+        open(m, "w").write("")
 
 if posted:
     print(f"drain: posted {posted} | remaining {len(remaining)}")
