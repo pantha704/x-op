@@ -24,6 +24,7 @@ from mcp import ClientSession
 from mcp.client.streamable_http import streamable_http_client
 
 URL = "http://127.0.0.1:8932/mcp"
+_DET = None
 
 
 async def call(s, name, args=None):
@@ -138,13 +139,14 @@ async def attach_tag(s, pid, handle):
 async def main():
     argv = sys.argv[1:]
     dry = "--dry" in argv
+    no_permalink = "--no-permalink" in argv
     tag_handle = ""
     fallback_text = ""
     pos = []
     i = 0
     while i < len(argv):
         a = argv[i]
-        if a == "--dry":
+        if a in ("--dry", "--no-permalink"):
             i += 1
         elif a == "--tag" and i + 1 < len(argv):
             tag_handle = argv[i + 1].lstrip("@"); i += 2
@@ -163,6 +165,28 @@ async def main():
         sys.exit(2)
     sz = os.path.getsize(img_path)
     print(f"image: {img_path} ({sz/1024:.0f} KB) | text: {text!r}")
+
+    # --- NSFW HARD GATE (owner directive 2026-09-24; fail closed) ---
+    EXPLICIT = {"FEMALE_BREAST_EXPOSED", "FEMALE_GENITALIA_EXPOSED", "MALE_GENITALIA_EXPOSED",
+                "BUTTOCKS_EXPOSED", "ANUS_EXPOSED", "FEMALE_BREAST_EXPOSED_THROUGH_CLOTHING"}
+    try:
+        global _DET
+        if _DET is None:
+            from nudenet import NudeDetector
+            _DET = NudeDetector()
+        sres = _DET.detect(img_path)
+        if isinstance(sres, dict):
+            sres = [sres]
+        hits = [d for d in sres if d.get("class") in EXPLICIT and d.get("score", 0) > 0.30]
+        if hits:
+            print("SCREEN BLOCKED: NSFW detected", [(d["class"], round(d["score"], 2)) for d in hits])
+            sys.exit(7)
+        print("screen: clean")
+    except SystemExit:
+        raise
+    except Exception as e:
+        print("SCREEN ERROR (fail closed):", str(e)[:90])
+        sys.exit(8)
 
     async with streamable_http_client(URL) as ctx:
         async with ClientSession(ctx[0], ctx[1]) as s:
@@ -250,7 +274,7 @@ async def main():
                     break
                 await asyncio.sleep(1.5)
             permalink = None
-            if outcome == "hit":
+            if outcome == "hit" and not no_permalink:
                 try:
                     await call(s, "cloak_navigate", {"page_id": pid, "url": "https://x.com/your_handle"})
                     await asyncio.sleep(4)

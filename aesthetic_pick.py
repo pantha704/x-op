@@ -34,7 +34,7 @@ QUERIES = [
     "cyberpunk neon city art",
     "(re zero OR attack on titan OR vinland saga) scenery art",
     "pixel art cityscape",
-    "cozy room illustration art",
+    "fantasy landscape art",
     "synthwave retrowave art",
     "dark fantasy landscape art",
     "game environment concept art",
@@ -95,7 +95,7 @@ def parse_likes(stats):
         return 0
 
 
-BANNED_TEXT = re.compile(r'\bnsfw|18\+|onlyfans|porn|lewd\b', re.I)
+BANNED_TEXT = re.compile(r'nsfw|18\+|onlyfans|por+n|lewd|cosplay|ecchi|hentai|swimsuit|bikini|lingerie|pin-?up|seductive|suggestive|bedroom|living room|kitchen|interior|room tour|my room|desk setup|apartment', re.I)
 REPOST_TEXT = re.compile(r'\b(not mine|repost|rt\b|via\s|credit[: ]|found this|unknown artist)', re.I)
 
 
@@ -135,6 +135,8 @@ async def main():
                         continue
                     if BANNED_TEXT.search(r.get("text") or ""):
                         continue
+                    if BANNED_TEXT.search(r.get("author") or "") or BANNED_TEXT.search(r.get("who") or ""):
+                        continue
                     if REPOST_TEXT.search(r.get("text") or ""):
                         continue
                     dt = r.get("dt") or ""
@@ -160,10 +162,10 @@ async def main():
             STOCK = [
                 ("unsplash", "https://unsplash.com/s/photos/cyberpunk-city-night"),
                 ("unsplash", "https://unsplash.com/s/photos/neon-japan-street-night"),
-                ("unsplash", "https://unsplash.com/s/photos/cozy-cabin-rain"),
+                ("unsplash", "https://unsplash.com/s/photos/misty-mountain-valley"),
                 ("unsplash", "https://unsplash.com/s/photos/nordic-mountains-fog"),
                 ("pinterest", "https://www.pinterest.com/search/pins/?q=anime%20scenery%20art"),
-                ("pinterest", "https://www.pinterest.com/search/pins/?q=cozy%20fantasy%20art"),
+                ("pinterest", "https://www.pinterest.com/search/pins/?q=fantasy%20landscape%20art"),
                 ("pinterest", "https://www.pinterest.com/search/pins/?q=cyberpunk%20art"),
                 ("pinterest", "https://www.pinterest.com/search/pins/?q=elden%20ring%20art"),
             ]
