@@ -170,6 +170,8 @@ def main():
         limit = int(argv[argv.index("--limit") + 1])
 
     have = posted_hashes()
+    import random as _r
+    _r.shuffle(SERIES)  # spread pulls across all 56 lanes
     os.makedirs("images/aesthetic", exist_ok=True)
     out = []
     n = 0
