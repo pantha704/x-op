@@ -55,31 +55,40 @@ FRANCHISES = [
 ]
 
 CHARACTERS = [
-    (r'kaguya shinomiya', "Kaguya Shinomiya"), (r'chika fujiwara', "Chika Fujiwara"),
-    (r'\bmelina\b', "Melina"), (r'\bmalenia\b', "Malenia"), (r'heolstor', "Heolstor"),
-    (r'soul of cinder', "Soul of Cinder"), (r'\bmiquella\b', "Miquella"), (r'\bradahn\b', "Radahn"),
-    (r'\bfurina\b', "Furina"), (r'\bmavuika\b', "Mavuika"), (r'raiden shogun', "Raiden Shogun"),
-    (r'\bnahida\b', "Nahida"), (r'\barlecchino\b', "Arlecchino"), (r'\bcolumbina\b', "Columbina"),
-    (r'\btsaritsa\b', "The Tsaritsa"), (r'\bventi\b', "Venti"), (r'\bzhongli\b', "Zhongli"),
-    (r'\bhu tao\b', "Hu Tao"), (r'\bfurina\b', "Furina"), (r'\bkazuha\b', "Kazuha"),
-    (r'\bsubaru\b', "Subaru Natsuki"), (r'\brem\b', "Rem"), (r'\bemilia\b', "Emilia"),
-    (r'\brebecca\b', "Rebecca"), (r'\blucy\b', "Lucy"), (r'\bdavid\b', "David Martinez"),
-    (r'\bmakima\b', "Makima"), (r'\bpower\b', "Power"), (r'\bdenji\b', "Denji"),
-    (r'\bgojo\b', "Gojo"), (r'\bsukuna\b', "Sukuna"), (r'\byuji\b', "Yuji Itadori"),
-    (r'\bthorfinn\b', "Thorfinn"), (r'\baskeladd\b', "Askeladd"), (r'\bcanute\b', "Canute"),
-    (r'\beren\b', "Eren Yeager"), (r'\blevi\b', "Levi"), (r'\bmikasa\b', "Mikasa"),
-    (r'\blight yagami\b|\bkira\b', "Light Yagami"), (r'\blelouch\b', "Lelouch"),
-    (r'\barthur morgan\b', "Arthur Morgan"), (r'\bdutch\b', "Dutch van der Linde"),
-    (r'\bsylphiette\b', "Sylphiette"), (r'\broxy\b', "Roxy"),
-    (r'\bfrieren\b', "Frieren"), (r'\bfemto\b', "Femto"),
+    (r'kaguya shinomiya', "Kaguya Shinomiya", "Love is War"), (r'chika fujiwara', "Chika Fujiwara", "Love is War"),
+    (r'\bram\b', "Ram", "Re:Zero"), (r'\brem\b', "Rem", "Re:Zero"), (r'\bemilia\b', "Emilia", "Re:Zero"),
+    (r'\bsubaru\b', "Subaru Natsuki", "Re:Zero"), (r'\bbeatrice\b', "Beatrice", "Re:Zero"),
+    (r'\bmelina\b', "Melina", "Elden Ring"), (r'\bmalenia\b', "Malenia", "Elden Ring"),
+    (r'heolstor', "Heolstor", "Elden Ring: Nightreign"), (r'soul of cinder', "Soul of Cinder", "Dark Souls III"),
+    (r'\bmiquella\b', "Miquella", "Elden Ring"), (r'\bradahn\b', "Radahn", "Elden Ring"),
+    (r'\brebecca\b', "Rebecca", "Cyberpunk: Edgerunners"), (r'\bdavid\b', "David Martinez", "Cyberpunk: Edgerunners"),
+    (r'\blucy\b', "Lucy", ""),
+    (r'\bfurina\b', "Furina", "Genshin Impact"), (r'\bmavuika\b', "Mavuika", "Genshin Impact"),
+    (r'raiden shogun', "Raiden Shogun", "Genshin Impact"), (r'\bnahida\b', "Nahida", "Genshin Impact"),
+    (r'\barlecchino\b', "Arlecchino", "Genshin Impact"), (r'\bcolumbina\b', "Columbina", "Genshin Impact"),
+    (r'\btsaritsa\b', "The Tsaritsa", "Genshin Impact"), (r'\bventi\b', "Venti", "Genshin Impact"),
+    (r'\bzhongli\b', "Zhongli", "Genshin Impact"), (r'\bhu tao\b', "Hu Tao", "Genshin Impact"),
+    (r'\bskirk\b', "Skirk", "Genshin Impact"),
+    (r'\bmakima\b', "Makima", "Chainsaw Man"), (r'\bdenji\b', "Denji", "Chainsaw Man"),
+    (r'\bgojo\b', "Gojo", "Jujutsu Kaisen"), (r'\bsukuna\b', "Sukuna", "Jujutsu Kaisen"),
+    (r'\byuji\b', "Yuji Itadori", "Jujutsu Kaisen"),
+    (r'\bthorfinn\b', "Thorfinn", "Vinland Saga"), (r'\baskeladd\b', "Askeladd", "Vinland Saga"),
+    (r'\bcanute\b', "Canute", "Vinland Saga"),
+    (r'\beren\b', "Eren Yeager", "Attack on Titan"), (r'\blevi\b', "Levi", "Attack on Titan"),
+    (r'\bmikasa\b', "Mikasa", "Attack on Titan"),
+    (r'\barthur morgan\b', "Arthur Morgan", "Red Dead Redemption 2"), (r'\bdutch\b', "Dutch van der Linde", "Red Dead Redemption 2"),
+    (r'\bsylphiette\b', "Sylphiette", "Mushoku Tensei"), (r'\broxy\b', "Roxy", "Mushoku Tensei"),
+    (r'\bfrieren\b', "Frieren", "Frieren"),
+    (r'\bguts\b', "Guts", "Berserk"), (r'\bgriffith\b', "Griffith", "Berserk"),
 ]
 
 def context_name(text, author=""):
-    """A few-word name-only context: character first, then specific title, then series."""
+    """Title rule (owner 2026-09-24): "Character | Series" when a character is known,
+    else the specific title, else the series alone."""
     src = (text or "").lower()
-    for pat, name in CHARACTERS:
+    for pat, name, series in CHARACTERS:
         if re.search(pat, src):
-            return name
+            return f"{name} | {series}" if series else name
     for pat, name in FRANCHISES:
         if re.search(pat, src):
             return name

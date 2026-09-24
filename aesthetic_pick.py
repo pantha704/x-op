@@ -27,6 +27,7 @@ URL = "http://127.0.0.1:8932/mcp"
 # flavoured as HER - genshin, elden ring, rdr2, rezero/aot/vinland saga, cozy or
 # feral, cyberpunk/edgerunners, retro-tech. No generic nature, no off-lane art.
 QUERIES = [
+    # persona core (her canon)
     "anime scenery art",
     "studio ghibli scenery art",
     "(elden ring OR dark souls) scenery art",
@@ -42,6 +43,41 @@ QUERIES = [
     "kaguya sama love is war art",
     "fullmetal alchemist art",
     "(another OR elfen lied) dark anime art",
+    # popular anime
+    "(jujutsu kaisen OR demon slayer OR chainsaw man) art",
+    "(solo leveling OR dandadan) anime art",
+    "(frieren OR spy x family) anime art",
+    "(one piece OR naruto OR bleach) anime art",
+    "mob psycho 100 art",
+    "(death note OR code geass) anime art",
+    # related (dark / psychological / seinen, close to her taste)
+    "(berserk OR monster) manga art",
+    "(steins gate OR evangelion) anime art",
+    "(cowboy bebop OR ghost in the shell) art",
+    "(mushoku tensei OR overlord) art",
+    "(one punch man) art",
+    # underrated / cult classics
+    "(monogatari OR ping pong the animation) anime art",
+    "(serial experiments lain OR ergo proxy OR texhnolyze) anime art",
+    "(mushishi OR haibane renmei) anime art",
+    "(tatami galaxy OR march comes in like a lion) anime art",
+    "(welcome to the nhk OR gankutsuou) anime art",
+    # popular games
+    "(zelda OR tears of the kingdom) art",
+    "(god of war OR horizon forbidden west) art",
+    "(hollow knight OR hades) art",
+    "(baldurs gate 3 OR elden ring) art",
+    "(final fantasy OR kingdom hearts) art",
+    "(witcher 3 OR skyrim) art",
+    "(persona 5 OR nier automata) art",
+    # related / underrated games
+    "(silent hill OR resident evil) art",
+    "(bloodborne OR sekiro) art",
+    "(metal gear solid OR death stranding) art",
+    "(outer wilds OR disco elysium) art",
+    "(signalis OR rain world) art",
+    "(hotline miami OR katana zero) art",
+    "(celeste OR hollow knight) art",
 ]
 
 READ_JS = r"""JSON.stringify((() => {
@@ -95,7 +131,7 @@ def parse_likes(stats):
         return 0
 
 
-BANNED_TEXT = re.compile(r'nsfw|18\+|onlyfans|por+n|lewd|cosplay|ecchi|hentai|swimsuit|bikini|lingerie|pin-?up|seductive|suggestive|bedroom|living room|kitchen|interior|room tour|my room|desk setup|apartment', re.I)
+BANNED_TEXT = re.compile(r'nsfw|18\+|onlyfans|por+n|lewd|cosplay|ecchi|hentai|swimsuit|bikini|lingerie|pin-?up|seductive|suggestive|nude|topless|undress|gravure|bath|shower|onsen|hot ?spring|bedroom|living room|kitchen|interior|room tour|my room|desk setup|apartment', re.I)
 REPOST_TEXT = re.compile(r'\b(not mine|repost|rt\b|via\s|credit[: ]|found this|unknown artist)', re.I)
 
 
@@ -115,7 +151,9 @@ async def main():
             np = json.loads(await call(s, "cloak_new_page", {"url": "https://x.com/explore"}))
             pid = np.get("page_id") or np.get("id")
             await asyncio.sleep(3)
-            for q in QUERIES:
+            import random as _r
+            _run_qs = _r.sample(QUERIES, min(16, len(QUERIES)))
+            for q in _run_qs:
                 try:
                     url = "https://x.com/search?q=" + q.replace(' ', '%20').replace('(', '%28').replace(')', '%29').replace('"', '%22') + "&src=typed_query&f=top"
                     await call(s, "cloak_navigate", {"page_id": pid, "url": url})

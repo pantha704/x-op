@@ -191,6 +191,23 @@ async def main():
         print("SCREEN ERROR (fail closed):", str(e)[:90])
         sys.exit(8)
 
+    # --- VISION LABEL GATE (owner 2026-09-24: vision names + NSFW review) ---
+    LABELS = "worker/image-labels.json"
+    _label = None
+    if os.path.exists(LABELS):
+        try:
+            _lb = json.load(open(LABELS))
+            _label = _lb.get(os.path.basename(img_path))
+        except Exception:
+            _label = None
+    if _label:
+        if _label.get("nsfw"):
+            print("SCREEN BLOCKED (vision):", (_label.get("reason") or "labeled NSFW")[:70])
+            sys.exit(7)
+        if not text and _label.get("title"):
+            text = _label["title"]
+            print("label title:", text)
+
     # --- DUPLICATE HARD GATE (owner: never post the same image twice, ever) ---
     import hashlib
     img_hash = hashlib.sha256(open(img_path, "rb").read()).hexdigest()
