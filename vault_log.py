@@ -28,7 +28,7 @@ def main():
             continue
         t = targets.get(r["url"], {})
         e = {
-            "url": urls.get(r["text"]) or r["url"],
+            "url": urls.get(r["text"]) or r.get("quote_url") or r["url"],
             "firedAt": "%sT%s+00:00" % (day, r["ts"]),
             "text": r["text"],
             "tag": (t.get("tags") or ["take"])[0],
