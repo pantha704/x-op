@@ -323,3 +323,147 @@
 - media: none
 - why: airing chart with slots; fandom register
 - created: 2026-09-23T10:40:00Z
+
+## [DRAFT-H-20260924-01] funny | pending
+- target: none
+- genre: gaming
+- text: "the new zealand trick is dead for control resonant. everyone unlocks at the same moment this time"
+- media: none
+- why: no new zealand trick, simultaneous launch; gaming in-crowd
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-02] funny | pending
+- target: none
+- genre: gaming
+- text: "the next halo is being made by the call of duty people. master chief is about to get a battle pass"
+- media: none
+- why: halo under activision; master chief battle pass absurdity
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-03] funny | pending
+- target: none
+- genre: anime
+- text: "six months without one piece after sunday. we're entering a timeskip arc"
+- media: none
+- why: one piece 2026 finale sunday; six month break as timeskip joke
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-04] funny | pending
+- target: none
+- genre: anime
+- text: "apothecary diaries season 3, then a movie, then season 3 again. my calendar belongs to maomao now"
+- media: none
+- why: s3 split around a movie; calendar hostage fandom joke
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-05] nostalgia | pending
+- target: none
+- genre: anime
+- text: "magic knight rayearth getting a retelling this october. younger me is losing it right now"
+- media: none
+- why: rayearth retelling october; 90s nostalgia
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-06] funny | pending
+- target: none
+- genre: tech
+- text: "someone built an app to detect meta glasses nearby. honestly i respect the paranoia"
+- media: none
+- why: zuckoff meta glasses detector; paranoia respect
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-07] funny | pending
+- target: none
+- genre: tech
+- text: "some ai phone calls were quietly routed to a human call center. the bots are outsourcing to us"
+- media: none
+- why: 404 media: ai calls routed to humans; outsourcing flip
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-H-20260924-08] nostalgia | pending
+- target: none
+- genre: anime
+- text: "kakao webtoon is folding into kakao page. one of the quiet corners of the internet is closing"
+- media: none
+- why: kakao webtoon consolidation; quiet app elegy
+- created: 2026-09-24T03:08:26Z
+
+## [DRAFT-U-20260924-01] utility | pending
+- target: https://jpdb.io/
+- url: https://jpdb.io/
+- media: media/util-shots/jpdb.jpg
+- text: "i never actually studied japanese, yet jpdb built my vocab deck from the anime i watch"
+- why: anime lane; vocab decks built from the shows you already watch
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-02] utility | pending
+- target: https://playnite.link/
+- url: https://playnite.link/
+- media: media/util-shots/playnite.jpg
+- text: "playnite did what nobody else bothered to. all my launchers, one window"
+- why: gaming lane; library aggregator across every store; launcher-hopping pain
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-03] utility | pending
+- target: https://www.wabbajack.org/
+- url: https://www.wabbajack.org/
+- media: media/util-shots/wabbajack.jpg
+- text: "instead of losing a weekend to modding, wabbajack installs the whole list while you sleep"
+- why: gaming lane; modlist installer; beloved in the modding crowd
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-04] utility | pending
+- target: https://openrouter.ai/
+- url: https://openrouter.ai/
+- media: media/util-shots/openrouter.jpg
+- text: "openrouter somehow runs every model behind one key. switching is a string change now"
+- why: ai lane; one key for every model; builder register
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-05] utility | pending
+- target: https://upscayl.org/
+- url: https://upscayl.org/
+- media: media/util-shots/upscayl.jpg
+- text: "old wallpapers look soft on new screens, but upscayl fixes that locally for free"
+- why: ai lane; local upscaling; old wallpapers on new displays
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-06] utility | pending
+- target: https://tldr.sh/
+- url: https://tldr.sh/
+- media: media/util-shots/tldr.jpg
+- text: "not once have i finished a man page. tldr gives me the examples and skips the rest"
+- why: dev lane; command examples instead of man pages; universal terminal pain
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-07] utility | pending
+- target: https://termux.dev/
+- url: https://termux.dev/
+- media: media/util-shots/termux.jpg
+- text: "my phone somehow runs a full linux terminal now. termux did it without root"
+- why: tech lane; linux terminal on android; pocket power-user signal
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-08] utility | pending
+- target: https://dearrow.ajay.app/
+- url: https://dearrow.ajay.app/
+- media: media/util-shots/dearrow.jpg
+- text: "youtube stopped shouting at me once dearrow was on. real frames instead of shocked faces"
+- why: internet lane; clickbait fix for youtube; sibling of queued sponsorblock
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-09] utility | pending
+- target: https://apps.ankiweb.net/
+- url: https://apps.ankiweb.net/
+- media: media/util-shots/anki.jpg
+- text: "every study app i've tried died in a month. anki somehow stuck around, asking right before i forget"
+- why: learning lane; spaced repetition; the study tool that outlasts the rest
+- created: 2026-09-24T03:11:00Z
+
+## [DRAFT-U-20260924-10] utility | pending
+- target: https://www.voidtools.com/
+- url: https://www.voidtools.com/
+- media: media/util-shots/everything.jpg
+- text: "nobody should still be using windows search. everything finds any file in a second"
+- why: windows lane; instant file search; the classic first install on any pc
+- created: 2026-09-24T03:11:00Z
