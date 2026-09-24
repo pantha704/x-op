@@ -1,4 +1,4 @@
-One worker cycle for the X op (@your_handle) reply rig on this VPS. FIRST read /home/ubuntu/x-op/worker/WORKER-SPEC.md and /home/ubuntu/x-op/worker/state.json and follow them exactly. Working dir /home/ubuntu/x-op.
+One worker cycle for the X op (@your_handle) reply rig on this VPS. FIRST read /home/ubuntu/x-op/ops/WORKER-SPEC.md and /home/ubuntu/x-op/worker/state.json and follow them exactly. Working dir /home/ubuntu/x-op.
 
 STEP 0a (PIPELINE RESUME - do this FIRST): if state.json.pending_verify is set, the previous wave is still posting or just finished. Wait for it (poll `pgrep -f fire_driver.py` every 20s, up to 15 min). Then run scroll_verify + vault_log on its fire log, check the log for a THROTTLED outcome (if present: set throttle_until = now+15m and SKIP this cycle's fire), then clear pending_verify in state.json. If the wave is still running after 15 min: leave pending_verify set, skip this cycle's fire, end the cycle.
 

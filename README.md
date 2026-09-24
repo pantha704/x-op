@@ -10,7 +10,7 @@ the account's behaviour human-like, genuinely funny, and within platform rules.
 
 One account, one serialized human-like action stream. The parts:
 
-1. **Reply worker** — `worker/`, spec: [`worker/WORKER-SPEC.md`](worker/WORKER-SPEC.md).
+1. **Reply worker** — `worker/`, spec: [`ops/WORKER-SPEC.md`](ops/WORKER-SPEC.md).
    Runs every 10 min in the active window (06:30–23:30 UTC):
    harvest → select → **compose-wide** (5 candidates per target, kill the 4 safest) → QC +
    bot-tell gates → **fire a detached wave** (≤20 replies, 15–35s jittered gaps) → **prep pass**:
