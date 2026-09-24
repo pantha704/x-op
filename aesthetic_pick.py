@@ -39,6 +39,9 @@ QUERIES = [
     "dark fantasy landscape art",
     "game environment concept art",
     "retro computer aesthetic art",
+    "kaguya sama love is war art",
+    "fullmetal alchemist art",
+    "(another OR elfen lied) dark anime art",
 ]
 
 READ_JS = r"""JSON.stringify((() => {
