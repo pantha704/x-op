@@ -38,10 +38,9 @@ Every post subtly invites a pick, a side, a correction, an answer. 'like if you 
 - read-aloud test: typed-in-four-seconds beats essay voice
 - images ~2x engagement and help the >=50% visible rule
 
-## Flow (draft-first, always)
-1. Draft -> append to `drafts/DRAFT-QUEUE.md` (format in `drafts/README.md`)
-2. Owner reviews / refines
-3. Fired only after approval: `post_publish.py` / `quote_publish.py`
+## Flow
+- **ORIGINALS (new posts): draft-first, always.** 1. Draft -> append to `drafts/DRAFT-QUEUE.md` (format in `drafts/README.md`). 2. Owner reviews / refines. 3. Fired only after approval (`post_publish.py`).
+- **QUOTES: fire directly (owner directive 2026-09-23).** The quote arm IS the fire arm now - same composed line, posted as a quote with the target's card attached (`run_quote_wave.sh`), no draft step (owner: "not even draft it"). Quality gates run in-flight (qc_botcheck + the screenshot test); skip weak lines.
 
 ## Cadence & the cold-start lift (from the field dossier)
 - **3-5 originals/day, SPACED - never batched.** Under 1,000 followers the algo lifts ONE post per feed-request to slot ~15-16, and the lift dies at 1,000 impressions; each post needs its own turn in the day.
